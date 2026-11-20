@@ -49,10 +49,12 @@ _SYNONYMS = {
     r"\textup": r"\text", r"\hbox": r"\text", r"\textbf": r"\text",
     r"\textit": r"\text", r"\emph": r"\text",
     r"\boldsymbol": r"\mathbf", r"\bm": r"\mathbf", r"\Bbb": r"\mathbb",
+    r"\qquad": r"\quad",
     r"\lt": "<", r"\gt": ">", r"\ast": "*", r"\colon": ":",
 }
 
-_SPACES = {r"\,", r"\;", r"\:", r"\!", "\\ ", r"\quad", r"\qquad", "~",
+# \quad reste : un grand blanc entre deux formules se voit aussi à la main.
+_SPACES = {r"\,", r"\;", r"\:", r"\!", "\\ ", "~",
            r"\enspace", r"\thinspace", r"\medspace", r"\thickspace"}
 _STYLES = {r"\displaystyle", r"\textstyle", r"\scriptstyle",
            r"\scriptscriptstyle", r"\limits", r"\nolimits",
@@ -329,7 +331,11 @@ def _norm_text(seq):
         t = seq[i]
         i += 1
         if isinstance(t, Group):
-            out.append(Group(_norm_text(list(t))))
+            inner = _norm_text(list(t))
+            if out and isinstance(out[-1], str) and out[-1].startswith("\\"):
+                out.append(Group(inner))  # argument d'une commande : accolades utiles
+            else:
+                out += inner  # {mot} : accolades invisibles
             continue
         if t in _TEXT_STRIP:  # gras, italique : invisibles à la main
             if i < len(seq) and isinstance(seq[i], Group):
@@ -348,13 +354,14 @@ def _norm_text(seq):
 
 
 def _fix_spaces(toks):
-    """Un seul espace, et aucun avant : ; ! ? » ni après « (babel français les met)."""
+    """Un seul espace ; aucun avant : ; ! ? » (babel français les met) ni avant . , ),
+    aucun après « et (. À la main, ces espaces-là ne se voient pas."""
     res = []
     for t in toks:
         if t == " ":
-            if res and res[-1] in (" ", "«"):
+            if res and res[-1] in (" ", "«", "("):
                 continue
-        elif t in (":", ";", "!", "?", "»") and res and res[-1] == " ":
+        elif t in (":", ";", "!", "?", "»", ".", ",", ")") and res and res[-1] == " ":
             res.pop()
         res.append(t)
     return res
@@ -373,7 +380,7 @@ def _find_dollar(s, i):
     raise LatexError("$ non fermé")
 
 
-def _split(line):
+def split_segments(line):
     """Liste de (genre, contenu), genre ∈ {text, inline, display}."""
     segs, buf = [], []
     i, n = 0, len(line)
@@ -449,11 +456,17 @@ def _flatten(items):
 def tokenize(line):
     """Tokens canoniques d'une ligne : commandes LaTeX entières, sinon caractères."""
     toks = []
-    for kind, content in _split(unicodedata.normalize("NFC", line)):
+    for kind, content in split_segments(unicodedata.normalize("NFC", line)):
         if kind == "text":
             toks += _flatten(_norm_text(_parse(_lex(_text_prep(content), text=True))))
             continue
         body = _flatten(_norm_math(_parse(_lex(content))))
+        # \quad en bord de formule = indentation de mise en page ; plusieurs = un seul.
+        body = [t for k, t in enumerate(body) if not (t == r"\quad" and k and body[k - 1] == r"\quad")]
+        while body and body[0] == r"\quad":
+            body.pop(0)
+        while body and body[-1] == r"\quad":
+            body.pop()
         if not body:
             continue
         if kind == "inline":

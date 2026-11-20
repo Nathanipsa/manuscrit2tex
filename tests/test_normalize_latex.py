@@ -32,7 +32,7 @@ CASES = [
     (r"$\left. \frac{df}{dx} \right|_{x=0}$", r"$\frac{df}{dx}|_{x=0}$"),
     (r"$\bigl[ x \bigr]$", r"$[x]$"),
     (r"$\int f(x) \, dx$", r"$\int f(x)dx$"),
-    (r"$a \quad b\;c\!d$", r"$abcd$"),
+    (r"$a \qquad b\;c\!d$", r"$a\quad bcd$"),
     (r"$\displaystyle\sum\limits_{i=1}^n i$", r"$\sum_{i=1}^{n}i$"),
     # synonymes et Unicode
     (r"$a \le b \ne c$", r"$a\leq b\neq c$"),
@@ -68,6 +68,10 @@ CASES = [
     (r"$\begin{array}{cc} 1 & 2 \end{array}$", r"$\begin{array}{cc}1&2\end{array}$"),
     (r"Prix : 5 \$", r"Prix: 5 \$"),
     ("  du texte seul  ", "du texte seul"),
+    (r"\[\quad\quad a \quad\quad b \qquad\]", r"\[a\quad b\]"),
+    ("trois contraintes . Puis ( voir $x$ ) , fin", "trois contraintes. Puis (voir $x$), fin"),
+    ("{Problème de synthèse}", "Problème de synthèse"),
+    (r"$\text{a {b} c}$", r"$\text{a b c}$"),
 ]
 
 
