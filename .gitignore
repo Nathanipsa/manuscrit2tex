@@ -1,0 +1,31 @@
+# Environnements (venv est un lien vers cours ipsa/ciri/env : pas de slash final)
+venv
+venv-pix2tex/
+
+# Données, poids et sorties lourdes : régénérables ou trop gros pour git
+data/
+models/
+results/
+*.pt
+*.ckpt
+*.safetensors
+
+# Gabarits générés (le script et le manifest suffisent à les refaire)
+templates/*.pdf
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# LaTeX
+*.aux
+*.log
+*.out
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+
+# Éditeurs
+.idea/
+.vscode/
