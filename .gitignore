@@ -10,8 +10,9 @@ results/
 *.ckpt
 *.safetensors
 
-# Gabarits générés (le script et le manifest suffisent à les refaire)
-templates/*.pdf
+# Gabarits : le PDF et build/ se refont, le manifest.json est la vérité terrain (versionné)
+templates/*/gabarits.pdf
+templates/*/build/
 
 # Python
 __pycache__/

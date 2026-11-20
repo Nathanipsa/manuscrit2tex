@@ -152,13 +152,13 @@ Petites rotations et cisaillement, déformations élastiques, flou, variation de
 - [ ] Exécuter les benchmarks d'environnement (section 7.1).
 
 ### Phase 1 : outillage des données
-- [ ] **Script `make_templates.py`** : prend des `.tex`, extrait et découpe les lignes, puis génère des PDF de feuilles gabarits (ArUco aux coins, ID de page / QR code, zones de ligne numérotées, LaTeX de référence) et un fichier `manifest.json` (ID de page → liste des lignes LaTeX).
+- [x] **Script `make_templates.py`** (20/11, lot01 généré : 25 pages, 218 cadres) : prend des `.tex`, extrait et découpe les lignes, puis génère des PDF de feuilles gabarits (ArUco aux coins, ID de page / QR code, zones de ligne numérotées, LaTeX de référence) et un fichier `manifest.json` (ID de page → liste des lignes LaTeX).
 - [ ] **Script `crop_scans.py`** : détection des ArUco (OpenCV), correction de perspective, découpe des zones, lecture de l'ID de page, écriture des paires `(png, tex)`.
 - [x] **Module `normalize_latex.py`** (20/11, `scripts/`, 7 tests dont un de compilation pdflatex ; option `display=True` pour la sortie) : forme canonique + tokenizer LaTeX, avec des tests unitaires sur des cas pièges (`\frac` / `\over`, espaces, `\left`/`\right`, `\text{}` français avec accents).
 - [ ] Script d'évaluation `evaluate.py` : CER, TER, ExpRate et taux de compilation.
 
 ### Phase 2 : collecte
-- [ ] Imprimer et remplir un premier lot (~25 pages) en couvrant texte, formules et lignes mixtes.
+- [ ] Imprimer et remplir un premier lot (~25 pages). **Prêts (20/11)** : `lot01` (rapport de stage : 110 texte, 97 mixtes, 11 formules) et `lot02` (4 rapports de maths dans `data/sources/` : 65 texte, 63 mixtes, 69 formules). Il reste ~320 formules inutilisées dans ces sources pour les lots suivants.
 - [ ] Mettre de côté ~5 pages comme **jeu de test figé**, qu'on ne touche plus jamais.
 - [ ] Varier stylos, scanner et téléphone.
 

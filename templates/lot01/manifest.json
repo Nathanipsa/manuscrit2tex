@@ -1,0 +1,3663 @@
+{
+ "batch": "lot01",
+ "created": "2026-11-20",
+ "seed": 0,
+ "sources": [
+  "/home/nathan/rapport-de-stage/chapitres/00_introduction.tex",
+  "/home/nathan/rapport-de-stage/chapitres/01_irap.tex",
+  "/home/nathan/rapport-de-stage/chapitres/02_contexte.tex",
+  "/home/nathan/rapport-de-stage/chapitres/03_interface.tex",
+  "/home/nathan/rapport-de-stage/chapitres/04_synthese.tex",
+  "/home/nathan/rapport-de-stage/chapitres/05_bases.tex",
+  "/home/nathan/rapport-de-stage/chapitres/06b_cartes.tex",
+  "/home/nathan/rapport-de-stage/chapitres/06_monte_carlo.tex",
+  "/home/nathan/rapport-de-stage/chapitres/07_conclusion.tex",
+  "/home/nathan/rapport-de-stage/annexes.tex"
+ ],
+ "page_mm": [
+  210,
+  297
+ ],
+ "aruco": {
+  "dict": "DICT_4X4_50",
+  "size_mm": 14,
+  "top_left_mm": {
+   "0": [
+    10,
+    10
+   ],
+   "1": [
+    186,
+    10
+   ],
+   "2": [
+    186,
+    273
+   ],
+   "3": [
+    10,
+    273
+   ]
+  }
+ },
+ "qr_mm": [
+  95,
+  7,
+  20
+ ],
+ "pages": [
+  {
+   "id": "lot01-p001",
+   "zones": [
+    {
+     "n": 1,
+     "kind": "formule",
+     "latex": "\\[\\mathrm{EI}(u)=\\mathbb{E}[\\max(0,y_{\\min}-\\xi-Y(u))]\\]",
+     "source": "04_synthese.tex:§47",
+     "ref_mm": [
+      15,
+      34
+     ],
+     "box_mm": [
+      15,
+      40,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 2,
+     "kind": "formule",
+     "latex": "\\[\\sigma_{\\text{pix}}=\\frac{\\sigma_{v}}{c}\\frac{\\bar{\\lambda}}{\\Delta\\lambda},\\]",
+     "source": "02_contexte.tex:§28",
+     "ref_mm": [
+      15,
+      59
+     ],
+     "box_mm": [
+      15,
+      69,
+      180,
+      26
+     ]
+    },
+    {
+     "n": 3,
+     "kind": "formule",
+     "latex": "\\[k(u,u')=\\sigma_{f}^{2}\\exp(-\\frac{\\|u-u'\\|^{2}}{2\\ell^{2}})\\]",
+     "source": "04_synthese.tex:§39",
+     "ref_mm": [
+      15,
+      98
+     ],
+     "box_mm": [
+      15,
+      108,
+      180,
+      26
+     ]
+    },
+    {
+     "n": 4,
+     "kind": "formule",
+     "latex": "\\[\\mathrm{BIC}=N_{\\text{indep}}\\ln(\\frac{D^{2}}{n})+p\\ln(N_{\\text{indep}}),\\]",
+     "source": "04_synthese.tex:§22",
+     "ref_mm": [
+      15,
+      137
+     ],
+     "box_mm": [
+      15,
+      147,
+      180,
+      26
+     ]
+    },
+    {
+     "n": 5,
+     "kind": "texte",
+     "latex": "sa décomposition en une composante AGN ponctuelle et",
+     "source": "04_synthese.tex:§73",
+     "ref_mm": [
+      15,
+      176
+     ],
+     "box_mm": [
+      15,
+      182,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 6,
+     "kind": "texte",
+     "latex": "dans le cadre de l'article en préparation. Le plus",
+     "source": "07_conclusion.tex:§11",
+     "ref_mm": [
+      15,
+      201
+     ],
+     "box_mm": [
+      15,
+      207,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 7,
+     "kind": "mixte",
+     "latex": "orthogonal sur l'espace des colonnes de $S$, $Q$ désignant",
+     "source": "04_synthese.tex:§96",
+     "ref_mm": [
+      15,
+      226
+     ],
+     "box_mm": [
+      15,
+      232,
+      180,
+      16
+     ]
+    }
+   ]
+  },
+  {
+   "id": "lot01-p002",
+   "zones": [
+    {
+     "n": 1,
+     "kind": "formule",
+     "latex": "$p=p_{\\text{shape}}+p_{\\text{comp}}$:",
+     "source": "04_synthese.tex:§17",
+     "ref_mm": [
+      15,
+      34
+     ],
+     "box_mm": [
+      15,
+      40,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 2,
+     "kind": "mixte",
+     "latex": "$0,07$ en donne $13$ sur MaStar. Pour régler ce problème,",
+     "source": "annexes.tex:§20",
+     "ref_mm": [
+      15,
+      59
+     ],
+     "box_mm": [
+      15,
+      65,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 3,
+     "kind": "texte",
+     "latex": "ne servait pas ici. Calibrer un seuil suppose que la",
+     "source": "04_synthese.tex:§81",
+     "ref_mm": [
+      15,
+      84
+     ],
+     "box_mm": [
+      15,
+      90,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 4,
+     "kind": "mixte",
+     "latex": "critère de significativité ($k_{i}>dk_{i}$, analogue",
+     "source": "04_synthese.tex:§96",
+     "ref_mm": [
+      15,
+      109
+     ],
+     "box_mm": [
+      15,
+      115,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 5,
+     "kind": "formule",
+     "latex": "$S/N=25$.",
+     "source": "06_monte_carlo.tex:§8",
+     "ref_mm": [
+      15,
+      134
+     ],
+     "box_mm": [
+      15,
+      140,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 6,
+     "kind": "mixte",
+     "latex": "\\%. Cependant, le $D^{2}$ à l'optimum est légèrement pire",
+     "source": "05_bases.tex:§22",
+     "ref_mm": [
+      15,
+      159
+     ],
+     "box_mm": [
+      15,
+      165,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 7,
+     "kind": "texte",
+     "latex": "immédiate du CNES (le centre spatial de Toulouse),",
+     "source": "01_irap.tex:§5",
+     "ref_mm": [
+      15,
+      184
+     ],
+     "box_mm": [
+      15,
+      190,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 8,
+     "kind": "formule",
+     "latex": "($z\\times E(B-V)\\times\\sigma_{v}\\times\\alpha\\times T$).",
+     "source": "04_synthese.tex:§58",
+     "ref_mm": [
+      15,
+      209
+     ],
+     "box_mm": [
+      15,
+      215,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 9,
+     "kind": "mixte",
+     "latex": "gaussien) du $D^{2}$ en fonction des paramètres, et nous",
+     "source": "04_synthese.tex:§30",
+     "ref_mm": [
+      15,
+      234
+     ],
+     "box_mm": [
+      15,
+      240,
+      180,
+      16
+     ]
+    }
+   ]
+  },
+  {
+   "id": "lot01-p003",
+   "zones": [
+    {
+     "n": 1,
+     "kind": "mixte",
+     "latex": "$(1+2dk_{i}/k_{i})$ fois le rayon: il matérialise",
+     "source": "04_synthese.tex:§105",
+     "ref_mm": [
+      15,
+      34
+     ],
+     "box_mm": [
+      15,
+      40,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 2,
+     "kind": "mixte",
+     "latex": "(en fraction de la plage balayée), et $\\sigma_{f}^{2}$ est",
+     "source": "04_synthese.tex:§40",
+     "ref_mm": [
+      15,
+      59
+     ],
+     "box_mm": [
+      15,
+      65,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 3,
+     "kind": "texte",
+     "latex": "quelle valeur et savoir à l'avance quels archétypes",
+     "source": "03_interface.tex:§19",
+     "ref_mm": [
+      15,
+      84
+     ],
+     "box_mm": [
+      15,
+      90,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 4,
+     "kind": "mixte",
+     "latex": "delta de pénalité de 1 (étoiles sans $E(B-V)$ contre",
+     "source": "04_synthese.tex:§89",
+     "ref_mm": [
+      15,
+      109
+     ],
+     "box_mm": [
+      15,
+      115,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 5,
+     "kind": "mixte",
+     "latex": "jusqu'à $0,69\\%$ à $S/N=25$). La comparaison directe à",
+     "source": "06_monte_carlo.tex:§11",
+     "ref_mm": [
+      15,
+      134
+     ],
+     "box_mm": [
+      15,
+      140,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 6,
+     "kind": "texte",
+     "latex": "Le diagnostic des contributions sur IndoUS, première",
+     "source": "05_bases.tex:§4",
+     "ref_mm": [
+      15,
+      159
+     ],
+     "box_mm": [
+      15,
+      165,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 7,
+     "kind": "formule",
+     "latex": "\\[u_{j}=\\frac{x_{j}-x_{j}^{\\min}}{x_{j}^{\\max}-x_{j}^{\\min}}\\in[0,1],\\quad y=\\frac{D^{2}-\\overline{D^{2}}}{s_{D^{2}}}\\]",
+     "source": "04_synthese.tex:§35",
+     "ref_mm": [
+      15,
+      184
+     ],
+     "box_mm": [
+      15,
+      194,
+      180,
+      26
+     ]
+    },
+    {
+     "n": 8,
+     "kind": "texte",
+     "latex": "sélectionnons ainsi, de manière déterministe, les",
+     "source": "04_synthese.tex:§99",
+     "ref_mm": [
+      15,
+      223
+     ],
+     "box_mm": [
+      15,
+      229,
+      180,
+      16
+     ]
+    }
+   ]
+  },
+  {
+   "id": "lot01-p004",
+   "zones": [
+    {
+     "n": 1,
+     "kind": "mixte",
+     "latex": "ne se répartissent pas au hasard: F0V perd $5,8$ points",
+     "source": "06_monte_carlo.tex:§6",
+     "ref_mm": [
+      15,
+      34
+     ],
+     "box_mm": [
+      15,
+      40,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 2,
+     "kind": "mixte",
+     "latex": "$N_{\\text{indep}}$ remonte de $12$ à $116$, et l'AGN se retrouve sans",
+     "source": "04_synthese.tex:§68",
+     "ref_mm": [
+      15,
+      59
+     ],
+     "box_mm": [
+      15,
+      65,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 3,
+     "kind": "formule",
+     "latex": "\\[\\tau=1+2\\sum_{w}\\rho(w),\\]",
+     "source": "04_synthese.tex:§12",
+     "ref_mm": [
+      15,
+      84
+     ],
+     "box_mm": [
+      15,
+      94,
+      180,
+      26
+     ]
+    },
+    {
+     "n": 4,
+     "kind": "formule",
+     "latex": "\\[\\underbrace{k\\geq0}_{\\text{positivité}},\\quad\\underbrace{\\sum_{i}k_{i}=1}_{\\text{normalisation}}.\\]",
+     "source": "02_contexte.tex:§17",
+     "ref_mm": [
+      15,
+      123
+     ],
+     "box_mm": [
+      15,
+      133,
+      180,
+      26
+     ]
+    },
+    {
+     "n": 5,
+     "kind": "texte",
+     "latex": "pentes interpole sans difficulté une loi de puissance",
+     "source": "04_synthese.tex:§77",
+     "ref_mm": [
+      15,
+      162
+     ],
+     "box_mm": [
+      15,
+      168,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 6,
+     "kind": "formule",
+     "latex": "\\[\\lambda_{\\text{repos}}=\\frac{\\lambda_{\\text{obs}}}{1+z},\\]",
+     "source": "02_contexte.tex:§26",
+     "ref_mm": [
+      15,
+      187
+     ],
+     "box_mm": [
+      15,
+      197,
+      180,
+      26
+     ]
+    },
+    {
+     "n": 7,
+     "kind": "mixte",
+     "latex": "surfaces lisses, la BO atteint le minimum dans $\\sim100\\%$",
+     "source": "04_synthese.tex:§54",
+     "ref_mm": [
+      15,
+      226
+     ],
+     "box_mm": [
+      15,
+      232,
+      180,
+      16
+     ]
+    }
+   ]
+  },
+  {
+   "id": "lot01-p005",
+   "zones": [
+    {
+     "n": 1,
+     "kind": "mixte",
+     "latex": "Le nombre de paramètres $p$",
+     "source": "04_synthese.tex:§16",
+     "ref_mm": [
+      15,
+      34
+     ],
+     "box_mm": [
+      15,
+      40,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 2,
+     "kind": "mixte",
+     "latex": "matrice des spectres stellaires (notée $II$ dans,",
+     "source": "02_contexte.tex:§19",
+     "ref_mm": [
+      15,
+      59
+     ],
+     "box_mm": [
+      15,
+      65,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 3,
+     "kind": "mixte",
+     "latex": "d'un composant sous une marge de $\\times3$. La règle n'est",
+     "source": "06_monte_carlo.tex:§23",
+     "ref_mm": [
+      15,
+      84
+     ],
+     "box_mm": [
+      15,
+      90,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 4,
+     "kind": "texte",
+     "latex": "prévu, mais il a été nécessaire de mesurer l'ampleur",
+     "source": "annexes.tex:§15",
+     "ref_mm": [
+      15,
+      109
+     ],
+     "box_mm": [
+      15,
+      115,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 5,
+     "kind": "mixte",
+     "latex": "bas. Le cas de BOSZ au chapitre 2 (1050 K à $\\times1,50$) est",
+     "source": "06_monte_carlo.tex:§23",
+     "ref_mm": [
+      15,
+      134
+     ],
+     "box_mm": [
+      15,
+      140,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 6,
+     "kind": "texte",
+     "latex": "Par défaut, chaque combinaison de paramètres actifs",
+     "source": "04_synthese.tex:§27",
+     "ref_mm": [
+      15,
+      159
+     ],
+     "box_mm": [
+      15,
+      165,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 7,
+     "kind": "texte",
+     "latex": "qu'une dizaine d'étoiles de référence.",
+     "source": "04_synthese.tex:§97",
+     "ref_mm": [
+      15,
+      184
+     ],
+     "box_mm": [
+      15,
+      190,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 8,
+     "kind": "texte",
+     "latex": "podium (le composant sert alors à absorber une",
+     "source": "04_synthese.tex:§61",
+     "ref_mm": [
+      15,
+      209
+     ],
+     "box_mm": [
+      15,
+      215,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 9,
+     "kind": "texte",
+     "latex": "visualiser les paramètres stellaires sur la galaxie.",
+     "source": "06b_cartes.tex:§4",
+     "ref_mm": [
+      15,
+      234
+     ],
+     "box_mm": [
+      15,
+      240,
+      180,
+      16
+     ]
+    }
+   ]
+  },
+  {
+   "id": "lot01-p006",
+   "zones": [
+    {
+     "n": 1,
+     "kind": "texte",
+     "latex": "poids et la normalisation avant de lancer la synthèse.",
+     "source": "03_interface.tex:§8",
+     "ref_mm": [
+      15,
+      34
+     ],
+     "box_mm": [
+      15,
+      40,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 2,
+     "kind": "mixte",
+     "latex": "l'espace des paramètres ont des $D^{2}$ proches. Nous",
+     "source": "04_synthese.tex:§32",
+     "ref_mm": [
+      15,
+      59
+     ],
+     "box_mm": [
+      15,
+      65,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 3,
+     "kind": "texte",
+     "latex": "mais aux contributions individuelles non identifiables",
+     "source": "04_synthese.tex:§104",
+     "ref_mm": [
+      15,
+      84
+     ],
+     "box_mm": [
+      15,
+      90,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 4,
+     "kind": "mixte",
+     "latex": "$p_{\\text{shape}}$: nombre de paramètres de forme non linéaires",
+     "source": "04_synthese.tex:§18",
+     "ref_mm": [
+      15,
+      109
+     ],
+     "box_mm": [
+      15,
+      115,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 5,
+     "kind": "texte",
+     "latex": "le spectre d'une population donnée. Elle utilise ce",
+     "source": "02_contexte.tex:§5",
+     "ref_mm": [
+      15,
+      134
+     ],
+     "box_mm": [
+      15,
+      140,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 6,
+     "kind": "mixte",
+     "latex": "seul creux). Le $D^{2}$ en fonction de $\\alpha$, $T$, $E(B-V)$ ou $\\sigma_{v}$",
+     "source": "04_synthese.tex:§52",
+     "ref_mm": [
+      15,
+      159
+     ],
+     "box_mm": [
+      15,
+      165,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 7,
+     "kind": "mixte",
+     "latex": "conserve la résolution $R=\\lambda/\\Delta\\lambda$. Quand $z$ est connu nous",
+     "source": "02_contexte.tex:§26",
+     "ref_mm": [
+      15,
+      184
+     ],
+     "box_mm": [
+      15,
+      190,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 8,
+     "kind": "mixte",
+     "latex": "de loi normale de moyenne $\\mu(u)$ et d'écart-type $\\sigma(u)$,",
+     "source": "04_synthese.tex:§48",
+     "ref_mm": [
+      15,
+      209
+     ],
+     "box_mm": [
+      15,
+      215,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 9,
+     "kind": "texte",
+     "latex": "bayésien (BIC)",
+     "source": "04_synthese.tex:§5",
+     "ref_mm": [
+      15,
+      234
+     ],
+     "box_mm": [
+      15,
+      240,
+      180,
+      16
+     ]
+    }
+   ]
+  },
+  {
+   "id": "lot01-p007",
+   "zones": [
+    {
+     "n": 1,
+     "kind": "texte",
+     "latex": "que l'on appelle la fonction de masse initiale qui est",
+     "source": "02_contexte.tex:§5",
+     "ref_mm": [
+      15,
+      34
+     ],
+     "box_mm": [
+      15,
+      40,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 2,
+     "kind": "mixte",
+     "latex": "voisin de $1$, condition pour que les contributions $k_{i}$",
+     "source": "02_contexte.tex:§31",
+     "ref_mm": [
+      15,
+      59
+     ],
+     "box_mm": [
+      15,
+      65,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 3,
+     "kind": "mixte",
+     "latex": "le nombre de paramètres, $n$ le nombre de points de",
+     "source": "04_synthese.tex:§9",
+     "ref_mm": [
+      15,
+      84
+     ],
+     "box_mm": [
+      15,
+      90,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 4,
+     "kind": "mixte",
+     "latex": "Avec $I_{gal}$ le spectre observé à synthétiser, $S$ la",
+     "source": "02_contexte.tex:§19",
+     "ref_mm": [
+      15,
+      109
+     ],
+     "box_mm": [
+      15,
+      115,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 5,
+     "kind": "mixte",
+     "latex": "meilleur $D^{2}$ déjà calculé. L'EI permet de mesurer le",
+     "source": "04_synthese.tex:§46",
+     "ref_mm": [
+      15,
+      134
+     ],
+     "box_mm": [
+      15,
+      140,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 6,
+     "kind": "mixte",
+     "latex": "$D^{2}=||I_{gal}-I_{syn}||^{2}$, où $I_{syn}=Sk$ est le spectre",
+     "source": "02_contexte.tex:§16",
+     "ref_mm": [
+      15,
+      159
+     ],
+     "box_mm": [
+      15,
+      165,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 7,
+     "kind": "texte",
+     "latex": "étroit, les interlocuteurs capables de vous contredire",
+     "source": "07_conclusion.tex:§9",
+     "ref_mm": [
+      15,
+      184
+     ],
+     "box_mm": [
+      15,
+      190,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 8,
+     "kind": "mixte",
+     "latex": "configuration de référence, celle où $N_{\\text{indep}}$",
+     "source": "04_synthese.tex:§15",
+     "ref_mm": [
+      15,
+      209
+     ],
+     "box_mm": [
+      15,
+      215,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 9,
+     "kind": "texte",
+     "latex": "permettait de réduire les déplacements.",
+     "source": "01_irap.tex:§18",
+     "ref_mm": [
+      15,
+      234
+     ],
+     "box_mm": [
+      15,
+      240,
+      180,
+      16
+     ]
+    }
+   ]
+  },
+  {
+   "id": "lot01-p008",
+   "zones": [
+    {
+     "n": 1,
+     "kind": "mixte",
+     "latex": "$z$ en optimisation. Dans le cas où l'on commencerait à",
+     "source": "04_synthese.tex:§52",
+     "ref_mm": [
+      15,
+      34
+     ],
+     "box_mm": [
+      15,
+      40,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 2,
+     "kind": "texte",
+     "latex": "galaxie et est obtenu grâce à la différence de",
+     "source": "06b_cartes.tex:§13",
+     "ref_mm": [
+      15,
+      59
+     ],
+     "box_mm": [
+      15,
+      65,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 3,
+     "kind": "mixte",
+     "latex": "contribution $k_{i}$; elle sert à la fois de",
+     "source": "04_synthese.tex:§96",
+     "ref_mm": [
+      15,
+      84
+     ],
+     "box_mm": [
+      15,
+      90,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 4,
+     "kind": "texte",
+     "latex": "dans les mêmes codes couleurs que le résultat de",
+     "source": "03_interface.tex:§19",
+     "ref_mm": [
+      15,
+      109
+     ],
+     "box_mm": [
+      15,
+      115,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 5,
+     "kind": "mixte",
+     "latex": "sur sa position: $T_{\\text{eff}}$ et $\\log g$ viennent du catalogue,",
+     "source": "04_synthese.tex:§105",
+     "ref_mm": [
+      15,
+      134
+     ],
+     "box_mm": [
+      15,
+      140,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 6,
+     "kind": "texte",
+     "latex": "complet sur la base traitée, avec le nombre de",
+     "source": "05_bases.tex:§12",
+     "ref_mm": [
+      15,
+      159
+     ],
+     "box_mm": [
+      15,
+      165,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 7,
+     "kind": "mixte",
+     "latex": "galaxie et les contributions. L'erreur $dk$ est calculée",
+     "source": "04_synthese.tex:§100",
+     "ref_mm": [
+      15,
+      184
+     ],
+     "box_mm": [
+      15,
+      190,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 8,
+     "kind": "mixte",
+     "latex": "$D^{2}=||I_{gal}-Sk||^{2}$ sous trois contraintes.",
+     "source": "02_contexte.tex:§15",
+     "ref_mm": [
+      15,
+      209
+     ],
+     "box_mm": [
+      15,
+      215,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 9,
+     "kind": "texte",
+     "latex": "la base MaStar, et j'y ai ajouté une émission de",
+     "source": "06_monte_carlo.tex:§22",
+     "ref_mm": [
+      15,
+      234
+     ],
+     "box_mm": [
+      15,
+      240,
+      180,
+      16
+     ]
+    }
+   ]
+  },
+  {
+   "id": "lot01-p009",
+   "zones": [
+    {
+     "n": 1,
+     "kind": "texte",
+     "latex": "regrouper. La première est dans la fenêtre de cube car",
+     "source": "06b_cartes.tex:§9",
+     "ref_mm": [
+      15,
+      34
+     ],
+     "box_mm": [
+      15,
+      40,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 2,
+     "kind": "texte",
+     "latex": "référence (base IndoUS ou MaStar), complétée au besoin",
+     "source": "02_contexte.tex:§8",
+     "ref_mm": [
+      15,
+      59
+     ],
+     "box_mm": [
+      15,
+      65,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 3,
+     "kind": "texte",
+     "latex": "et il est nécessaire d'utiliser une méthode",
+     "source": "04_synthese.tex:§27",
+     "ref_mm": [
+      15,
+      84
+     ],
+     "box_mm": [
+      15,
+      90,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 4,
+     "kind": "mixte",
+     "latex": "balayée) et $\\sigma_{f}^{2}=1$.",
+     "source": "04_synthese.tex:§40",
+     "ref_mm": [
+      15,
+      109
+     ],
+     "box_mm": [
+      15,
+      115,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 5,
+     "kind": "mixte",
+     "latex": "des contributions stable: de $S/N=\\infty$ à $S/N=25$, les",
+     "source": "07_conclusion.tex:§4",
+     "ref_mm": [
+      15,
+      134
+     ],
+     "box_mm": [
+      15,
+      140,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 6,
+     "kind": "texte",
+     "latex": "bibliothèques stellaires publiques (IndoUS, MaStar).",
+     "source": "01_irap.tex:§20",
+     "ref_mm": [
+      15,
+      159
+     ],
+     "box_mm": [
+      15,
+      165,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 7,
+     "kind": "texte",
+     "latex": "solutions en effet de bord, qui remplace la",
+     "source": "07_conclusion.tex:§5",
+     "ref_mm": [
+      15,
+      184
+     ],
+     "box_mm": [
+      15,
+      190,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 8,
+     "kind": "mixte",
+     "latex": "sur la pertinence d'un axe de transformation ($\\sigma_{v}$ ou",
+     "source": "04_synthese.tex:§88",
+     "ref_mm": [
+      15,
+      209
+     ],
+     "box_mm": [
+      15,
+      215,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 9,
+     "kind": "texte",
+     "latex": "autre stagiaire de la même tutrice. Ce bureau",
+     "source": "01_irap.tex:§13",
+     "ref_mm": [
+      15,
+      234
+     ],
+     "box_mm": [
+      15,
+      240,
+      180,
+      16
+     ]
+    }
+   ]
+  },
+  {
+   "id": "lot01-p010",
+   "zones": [
+    {
+     "n": 1,
+     "kind": "mixte",
+     "latex": "l'optimum passe de $-0,20$ à $+0,05$, et devient stable",
+     "source": "05_bases.tex:§22",
+     "ref_mm": [
+      15,
+      34
+     ],
+     "box_mm": [
+      15,
+      40,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 2,
+     "kind": "texte",
+     "latex": "illustre la valeur d'un outil de validation: conçu",
+     "source": "06_monte_carlo.tex:§16",
+     "ref_mm": [
+      15,
+      59
+     ],
+     "box_mm": [
+      15,
+      65,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 3,
+     "kind": "mixte",
+     "latex": "base ($10^{-4}$ pour le flux) soit par leur annonce dans",
+     "source": "05_bases.tex:§11",
+     "ref_mm": [
+      15,
+      84
+     ],
+     "box_mm": [
+      15,
+      90,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 4,
+     "kind": "mixte",
+     "latex": "et $0$ si la colonne lui est orthogonale.",
+     "source": "04_synthese.tex:§75",
+     "ref_mm": [
+      15,
+      109
+     ],
+     "box_mm": [
+      15,
+      115,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 5,
+     "kind": "texte",
+     "latex": "L'incertitude de la prédiction est proche de 0 sur un",
+     "source": "04_synthese.tex:§42",
+     "ref_mm": [
+      15,
+      134
+     ],
+     "box_mm": [
+      15,
+      140,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 6,
+     "kind": "texte",
+     "latex": "matrice de variance-covariance des contributions:",
+     "source": "04_synthese.tex:§96",
+     "ref_mm": [
+      15,
+      159
+     ],
+     "box_mm": [
+      15,
+      165,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 7,
+     "kind": "texte",
+     "latex": "+0,30), ce qui indique que c'est une propriété de la",
+     "source": "05_bases.tex:§20",
+     "ref_mm": [
+      15,
+      184
+     ],
+     "box_mm": [
+      15,
+      190,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 8,
+     "kind": "texte",
+     "latex": "l'objet d'un article déposé en accès ouvert sur",
+     "source": "01_irap.tex:§20",
+     "ref_mm": [
+      15,
+      209
+     ],
+     "box_mm": [
+      15,
+      215,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 9,
+     "kind": "texte",
+     "latex": "retrouver une valeur intérieure mais aussi de trouver",
+     "source": "04_synthese.tex:§55",
+     "ref_mm": [
+      15,
+      234
+     ],
+     "box_mm": [
+      15,
+      240,
+      180,
+      16
+     ]
+    }
+   ]
+  },
+  {
+   "id": "lot01-p011",
+   "zones": [
+    {
+     "n": 1,
+     "kind": "mixte",
+     "latex": "Le cas «étoiles seules» y est exactement $a=0$, si",
+     "source": "04_synthese.tex:§74",
+     "ref_mm": [
+      15,
+      34
+     ],
+     "box_mm": [
+      15,
+      40,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 2,
+     "kind": "mixte",
+     "latex": "référence, et $E(B-V)=0$ redonne l'identité.",
+     "source": "02_contexte.tex:§27",
+     "ref_mm": [
+      15,
+      59
+     ],
+     "box_mm": [
+      15,
+      65,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 3,
+     "kind": "texte",
+     "latex": "signifie qu'il travaille correctement à chaque fois.",
+     "source": "04_synthese.tex:§83",
+     "ref_mm": [
+      15,
+      84
+     ],
+     "box_mm": [
+      15,
+      90,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 4,
+     "kind": "mixte",
+     "latex": "$l\\leq\\{k,Ck\\}\\leq u$, permet d'imposer une fonction de masse",
+     "source": "02_contexte.tex:§22",
+     "ref_mm": [
+      15,
+      109
+     ],
+     "box_mm": [
+      15,
+      115,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 5,
+     "kind": "texte",
+     "latex": "passerait par une BO. Plutôt que de tout balayer, nous",
+     "source": "04_synthese.tex:§30",
+     "ref_mm": [
+      15,
+      134
+     ],
+     "box_mm": [
+      15,
+      140,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 6,
+     "kind": "mixte",
+     "latex": "peut que faire baisser le $D^{2}$. Sans pénalité, le",
+     "source": "04_synthese.tex:§82",
+     "ref_mm": [
+      15,
+      159
+     ],
+     "box_mm": [
+      15,
+      165,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 7,
+     "kind": "texte",
+     "latex": "montrant l'image du continu du cube. Les paramètres",
+     "source": "06b_cartes.tex:§11",
+     "ref_mm": [
+      15,
+      184
+     ],
+     "box_mm": [
+      15,
+      190,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 8,
+     "kind": "texte",
+     "latex": "Celui-ci suit exactement la démarche que nous avons",
+     "source": "06_monte_carlo.tex:§3",
+     "ref_mm": [
+      15,
+      209
+     ],
+     "box_mm": [
+      15,
+      215,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 9,
+     "kind": "texte",
+     "latex": "travail à part entière.",
+     "source": "03_interface.tex:§2",
+     "ref_mm": [
+      15,
+      234
+     ],
+     "box_mm": [
+      15,
+      240,
+      180,
+      16
+     ]
+    }
+   ]
+  },
+  {
+   "id": "lot01-p012",
+   "zones": [
+    {
+     "n": 1,
+     "kind": "mixte",
+     "latex": "qualité suffisante à rendre $D^{2}(z)$ lisse, on passe donc",
+     "source": "04_synthese.tex:§52",
+     "ref_mm": [
+      15,
+      34
+     ],
+     "box_mm": [
+      15,
+      40,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 2,
+     "kind": "texte",
+     "latex": "résolution commune est différente, particulièrement",
+     "source": "05_bases.tex:§18",
+     "ref_mm": [
+      15,
+      59
+     ],
+     "box_mm": [
+      15,
+      65,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 3,
+     "kind": "texte",
+     "latex": "d'archétypes souhaités, et le seuil s'adapte",
+     "source": "annexes.tex:§20",
+     "ref_mm": [
+      15,
+      84
+     ],
+     "box_mm": [
+      15,
+      90,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 4,
+     "kind": "texte",
+     "latex": "contributions sont identifiables et leurs barres",
+     "source": "04_synthese.tex:§86",
+     "ref_mm": [
+      15,
+      109
+     ],
+     "box_mm": [
+      15,
+      115,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 5,
+     "kind": "mixte",
+     "latex": "constante quel que soit le $S/N$: le signe d'un",
+     "source": "06_monte_carlo.tex:§10",
+     "ref_mm": [
+      15,
+      134
+     ],
+     "box_mm": [
+      15,
+      140,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 6,
+     "kind": "texte",
+     "latex": "possédant déjà une fonction de lecture). Si la base",
+     "source": "05_bases.tex:§7",
+     "ref_mm": [
+      15,
+      159
+     ],
+     "box_mm": [
+      15,
+      165,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 7,
+     "kind": "mixte",
+     "latex": "prédite (rapport $\\sim0,3$ au lieu de $1$ contre $0.98$ pour",
+     "source": "06_monte_carlo.tex:§15",
+     "ref_mm": [
+      15,
+      184
+     ],
+     "box_mm": [
+      15,
+      190,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 8,
+     "kind": "mixte",
+     "latex": "spectres) à la norme $1$, nous retenons celle de plus",
+     "source": "04_synthese.tex:§99",
+     "ref_mm": [
+      15,
+      209
+     ],
+     "box_mm": [
+      15,
+      215,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 9,
+     "kind": "texte",
+     "latex": "J'ai ajouté un bouton sur l'interface principale pour",
+     "source": "03_interface.tex:§21",
+     "ref_mm": [
+      15,
+      234
+     ],
+     "box_mm": [
+      15,
+      240,
+      180,
+      16
+     ]
+    }
+   ]
+  },
+  {
+   "id": "lot01-p013",
+   "zones": [
+    {
+     "n": 1,
+     "kind": "texte",
+     "latex": "stricts m'a permis de gérer mon temps de travail de",
+     "source": "01_irap.tex:§11",
+     "ref_mm": [
+      15,
+      34
+     ],
+     "box_mm": [
+      15,
+      40,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 2,
+     "kind": "texte",
+     "latex": "IndoUS, MaStar et Pickles (empiriques) et BOSZ",
+     "source": "05_bases.tex:§18",
+     "ref_mm": [
+      15,
+      59
+     ],
+     "box_mm": [
+      15,
+      65,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 3,
+     "kind": "mixte",
+     "latex": "réduction de $D^{2}$ apportée par la colonne AGN présente",
+     "source": "04_synthese.tex:§81",
+     "ref_mm": [
+      15,
+      84
+     ],
+     "box_mm": [
+      15,
+      90,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 4,
+     "kind": "mixte",
+     "latex": "contribution de F0V vers M0V, ici $9,5$ points, sur une",
+     "source": "06_monte_carlo.tex:§6",
+     "ref_mm": [
+      15,
+      109
+     ],
+     "box_mm": [
+      15,
+      115,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 5,
+     "kind": "mixte",
+     "latex": "à $-0,20$; le gain de l'axe tombe de 2,767 \\% à 0,108",
+     "source": "05_bases.tex:§22",
+     "ref_mm": [
+      15,
+      134
+     ],
+     "box_mm": [
+      15,
+      140,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 6,
+     "kind": "texte",
+     "latex": "original et reconstruit, avec le résidu (la distance",
+     "source": "00_introduction.tex:§5",
+     "ref_mm": [
+      15,
+      159
+     ],
+     "box_mm": [
+      15,
+      165,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 7,
+     "kind": "texte",
+     "latex": "personnel. Certains encadrants, dont ma tutrice,",
+     "source": "01_irap.tex:§18",
+     "ref_mm": [
+      15,
+      184
+     ],
+     "box_mm": [
+      15,
+      190,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 8,
+     "kind": "texte",
+     "latex": "Sur son objet propre, la synthèse de population, les",
+     "source": "07_conclusion.tex:§4",
+     "ref_mm": [
+      15,
+      209
+     ],
+     "box_mm": [
+      15,
+      215,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 9,
+     "kind": "mixte",
+     "latex": "valeurs de $D^{2}$ standardisées déjà calculées, $\\mathbf{k}_{*}$ est le",
+     "source": "04_synthese.tex:§44",
+     "ref_mm": [
+      15,
+      234
+     ],
+     "box_mm": [
+      15,
+      240,
+      180,
+      16
+     ]
+    }
+   ]
+  },
+  {
+   "id": "lot01-p014",
+   "zones": [
+    {
+     "n": 1,
+     "kind": "mixte",
+     "latex": "Une fois le solveur corrigé, les tests indiquent un $D^{2}$",
+     "source": "06_monte_carlo.tex:§8",
+     "ref_mm": [
+      15,
+      34
+     ],
+     "box_mm": [
+      15,
+      40,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 2,
+     "kind": "mixte",
+     "latex": "autour de $1$, comparable à celui des étoiles de",
+     "source": "02_contexte.tex:§32",
+     "ref_mm": [
+      15,
+      59
+     ],
+     "box_mm": [
+      15,
+      65,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 3,
+     "kind": "texte",
+     "latex": "regardons ce qu'il en reste. En notant",
+     "source": "04_synthese.tex:§75",
+     "ref_mm": [
+      15,
+      84
+     ],
+     "box_mm": [
+      15,
+      90,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 4,
+     "kind": "texte",
+     "latex": "valable que pour les composants non stellaires. Dans",
+     "source": "06_monte_carlo.tex:§23",
+     "ref_mm": [
+      15,
+      109
+     ],
+     "box_mm": [
+      15,
+      115,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 5,
+     "kind": "mixte",
+     "latex": "Un premier soupçon se présente. La contrainte $\\sum_{j}k_{j}=1$",
+     "source": "04_synthese.tex:§74",
+     "ref_mm": [
+      15,
+      134
+     ],
+     "box_mm": [
+      15,
+      144,
+      180,
+      26
+     ]
+    },
+    {
+     "n": 6,
+     "kind": "texte",
+     "latex": "L'inversion sous contraintes (positivité, somme unité)",
+     "source": "06_monte_carlo.tex:§13",
+     "ref_mm": [
+      15,
+      173
+     ],
+     "box_mm": [
+      15,
+      179,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 7,
+     "kind": "texte",
+     "latex": "tourner entièrement. Pour le moment, la carte d'âge",
+     "source": "06b_cartes.tex:§16",
+     "ref_mm": [
+      15,
+      198
+     ],
+     "box_mm": [
+      15,
+      204,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 8,
+     "kind": "texte",
+     "latex": "mois, du 1er juin au 30 septembre 2026, que j'ai",
+     "source": "00_introduction.tex:§3",
+     "ref_mm": [
+      15,
+      223
+     ],
+     "box_mm": [
+      15,
+      229,
+      180,
+      16
+     ]
+    }
+   ]
+  },
+  {
+   "id": "lot01-p015",
+   "zones": [
+    {
+     "n": 1,
+     "kind": "mixte",
+     "latex": "changée par souci de lisibilité), $I_{syn}$ le spectre",
+     "source": "02_contexte.tex:§19",
+     "ref_mm": [
+      15,
+      34
+     ],
+     "box_mm": [
+      15,
+      40,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 2,
+     "kind": "mixte",
+     "latex": "fenêtrage automatique de la somme. Nous avons $\\tau\\approx1$ pour",
+     "source": "04_synthese.tex:§12",
+     "ref_mm": [
+      15,
+      59
+     ],
+     "box_mm": [
+      15,
+      65,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 3,
+     "kind": "texte",
+     "latex": "La figure 2 montre deux cartes de NGC 1365 sur les",
+     "source": "06b_cartes.tex:§12",
+     "ref_mm": [
+      15,
+      84
+     ],
+     "box_mm": [
+      15,
+      90,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 4,
+     "kind": "texte",
+     "latex": "le plus souvent par des projections (ACP, NMF,",
+     "source": "04_synthese.tex:§101",
+     "ref_mm": [
+      15,
+      109
+     ],
+     "box_mm": [
+      15,
+      115,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 5,
+     "kind": "texte",
+     "latex": "prochain point à évaluer en fonction de",
+     "source": "04_synthese.tex:§46",
+     "ref_mm": [
+      15,
+      134
+     ],
+     "box_mm": [
+      15,
+      140,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 6,
+     "kind": "mixte",
+     "latex": "HE 0021$-$1819 et le bulbe de NGC 1566. Dans les deux",
+     "source": "05_bases.tex:§20",
+     "ref_mm": [
+      15,
+      159
+     ],
+     "box_mm": [
+      15,
+      165,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 7,
+     "kind": "mixte",
+     "latex": "cette analyse donne des $dk_{i}$ par étoile énormes,",
+     "source": "04_synthese.tex:§97",
+     "ref_mm": [
+      15,
+      184
+     ],
+     "box_mm": [
+      15,
+      190,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 8,
+     "kind": "mixte",
+     "latex": "$D^{2}$ déjà calculés, $s_{D^{2}}$ est l'écart-type des $D^{2}$ déjà",
+     "source": "04_synthese.tex:§36",
+     "ref_mm": [
+      15,
+      209
+     ],
+     "box_mm": [
+      15,
+      215,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 9,
+     "kind": "texte",
+     "latex": "spectres, elle comporte désormais la possibilité de",
+     "source": "03_interface.tex:§17",
+     "ref_mm": [
+      15,
+      234
+     ],
+     "box_mm": [
+      15,
+      240,
+      180,
+      16
+     ]
+    }
+   ]
+  },
+  {
+   "id": "lot01-p016",
+   "zones": [
+    {
+     "n": 1,
+     "kind": "texte",
+     "latex": "objectivement si une composante supplémentaire est",
+     "source": "07_conclusion.tex:§5",
+     "ref_mm": [
+      15,
+      34
+     ],
+     "box_mm": [
+      15,
+      40,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 2,
+     "kind": "texte",
+     "latex": "n'importe quel spectre.",
+     "source": "04_synthese.tex:§36",
+     "ref_mm": [
+      15,
+      59
+     ],
+     "box_mm": [
+      15,
+      65,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 3,
+     "kind": "mixte",
+     "latex": "synthétique reconstruit et $k$ le vecteur des",
+     "source": "02_contexte.tex:§19",
+     "ref_mm": [
+      15,
+      84
+     ],
+     "box_mm": [
+      15,
+      90,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 4,
+     "kind": "mixte",
+     "latex": "spectre observé d'une zone, $I_{gal}$, comme une",
+     "source": "02_contexte.tex:§8",
+     "ref_mm": [
+      15,
+      109
+     ],
+     "box_mm": [
+      15,
+      115,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 5,
+     "kind": "mixte",
+     "latex": "est gaussienne. Le premier terme est grand quand $\\mu(u)$",
+     "source": "04_synthese.tex:§48",
+     "ref_mm": [
+      15,
+      134
+     ],
+     "box_mm": [
+      15,
+      140,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 6,
+     "kind": "texte",
+     "latex": "considérée comme fiable. C'est ce que le test suivant",
+     "source": "06_monte_carlo.tex:§21",
+     "ref_mm": [
+      15,
+      159
+     ],
+     "box_mm": [
+      15,
+      165,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 7,
+     "kind": "mixte",
+     "latex": "points déjà calculés, $\\sigma_{n}^{2}=10^{-6}$ est le bruit supposé",
+     "source": "04_synthese.tex:§44",
+     "ref_mm": [
+      15,
+      184
+     ],
+     "box_mm": [
+      15,
+      190,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 8,
+     "kind": "mixte",
+     "latex": "des pixels à bruit blanc, $\\tau$ grand si très corrélés.",
+     "source": "04_synthese.tex:§12",
+     "ref_mm": [
+      15,
+      209
+     ],
+     "box_mm": [
+      15,
+      215,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 9,
+     "kind": "texte",
+     "latex": "manière autonome, en fonction des besoins du projet et",
+     "source": "01_irap.tex:§11",
+     "ref_mm": [
+      15,
+      234
+     ],
+     "box_mm": [
+      15,
+      240,
+      180,
+      16
+     ]
+    }
+   ]
+  },
+  {
+   "id": "lot01-p017",
+   "zones": [
+    {
+     "n": 1,
+     "kind": "texte",
+     "latex": "La normalisation: mettre l'observé à l'échelle des",
+     "source": "02_contexte.tex:§30",
+     "ref_mm": [
+      15,
+      34
+     ],
+     "box_mm": [
+      15,
+      40,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 2,
+     "kind": "mixte",
+     "latex": "spectrales changeant le $N_{\\text{indep}}$):",
+     "source": "04_synthese.tex:§82",
+     "ref_mm": [
+      15,
+      59
+     ],
+     "box_mm": [
+      15,
+      65,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 3,
+     "kind": "texte",
+     "latex": "Le problème le plus important est que l'extinction du",
+     "source": "05_bases.tex:§21",
+     "ref_mm": [
+      15,
+      84
+     ],
+     "box_mm": [
+      15,
+      90,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 4,
+     "kind": "mixte",
+     "latex": "corrélation intégré des $n$ pixels, suivant l'estimateur",
+     "source": "04_synthese.tex:§12",
+     "ref_mm": [
+      15,
+      109
+     ],
+     "box_mm": [
+      15,
+      115,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 5,
+     "kind": "mixte",
+     "latex": "arrondit $N_{\\text{indep}}$ à l'entier le plus proche.",
+     "source": "04_synthese.tex:§13",
+     "ref_mm": [
+      15,
+      134
+     ],
+     "box_mm": [
+      15,
+      140,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 6,
+     "kind": "texte",
+     "latex": "Adapter l'interface aux données publiques",
+     "source": "03_interface.tex:§10",
+     "ref_mm": [
+      15,
+      159
+     ],
+     "box_mm": [
+      15,
+      165,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 7,
+     "kind": "texte",
+     "latex": "trous, c'est-à-dire des intervalles de longueur d'onde",
+     "source": "03_interface.tex:§16",
+     "ref_mm": [
+      15,
+      184
+     ],
+     "box_mm": [
+      15,
+      190,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 8,
+     "kind": "mixte",
+     "latex": "gonflant son propre $N_{\\text{indep}}$). Nous le mesurons sur la",
+     "source": "04_synthese.tex:§15",
+     "ref_mm": [
+      15,
+      209
+     ],
+     "box_mm": [
+      15,
+      215,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 9,
+     "kind": "mixte",
+     "latex": "= $[\\mathrm{Fe/H}]$, taille $\\propto k_{i}$). Vue riche de la population,",
+     "source": "04_synthese.tex:§104",
+     "ref_mm": [
+      15,
+      234
+     ],
+     "box_mm": [
+      15,
+      240,
+      180,
+      16
+     ]
+    }
+   ]
+  },
+  {
+   "id": "lot01-p018",
+   "zones": [
+    {
+     "n": 1,
+     "kind": "mixte",
+     "latex": "singulière et $dk_{i}\\approx\\sigma\\sqrt{(S^{t}S)_{ii}^{-1}}$ explose. Les",
+     "source": "04_synthese.tex:§97",
+     "ref_mm": [
+      15,
+      34
+     ],
+     "box_mm": [
+      15,
+      40,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 2,
+     "kind": "texte",
+     "latex": "observés pour déterminer la population présente. Il",
+     "source": "02_contexte.tex:§5",
+     "ref_mm": [
+      15,
+      59
+     ],
+     "box_mm": [
+      15,
+      65,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 3,
+     "kind": "texte",
+     "latex": "sur la distribution fine de métallicité. À noter que",
+     "source": "05_bases.tex:§16",
+     "ref_mm": [
+      15,
+      84
+     ],
+     "box_mm": [
+      15,
+      90,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 4,
+     "kind": "mixte",
+     "latex": "nombre de pixels du spectre, $N_{\\text{indep}}$ le nombre effectif",
+     "source": "04_synthese.tex:§23",
+     "ref_mm": [
+      15,
+      109
+     ],
+     "box_mm": [
+      15,
+      115,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 5,
+     "kind": "texte",
+     "latex": "La colonne AGN étant impossible à choisir dans le",
+     "source": "04_synthese.tex:§88",
+     "ref_mm": [
+      15,
+      134
+     ],
+     "box_mm": [
+      15,
+      140,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 6,
+     "kind": "texte",
+     "latex": "déplace à vélo, l'OMP a même remporté le concours",
+     "source": "01_irap.tex:§18",
+     "ref_mm": [
+      15,
+      159
+     ],
+     "box_mm": [
+      15,
+      165,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 7,
+     "kind": "mixte",
+     "latex": "suite une significativité de $2\\sigma$ (95\\% de confiance)",
+     "source": "04_synthese.tex:§96",
+     "ref_mm": [
+      15,
+      184
+     ],
+     "box_mm": [
+      15,
+      190,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 8,
+     "kind": "mixte",
+     "latex": "calculés obtenue par le noyau $k$, $\\mathbf{y}$ est le vecteur des",
+     "source": "04_synthese.tex:§44",
+     "ref_mm": [
+      15,
+      209
+     ],
+     "box_mm": [
+      15,
+      215,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 9,
+     "kind": "mixte",
+     "latex": "par ailleurs inchangées au centième près à $S/N=100$, $50$",
+     "source": "06_monte_carlo.tex:§6",
+     "ref_mm": [
+      15,
+      234
+     ],
+     "box_mm": [
+      15,
+      240,
+      180,
+      16
+     ]
+    }
+   ]
+  },
+  {
+   "id": "lot01-p019",
+   "zones": [
+    {
+     "n": 1,
+     "kind": "texte",
+     "latex": "privé, mais d'une logique équivalente de",
+     "source": "01_irap.tex:§15",
+     "ref_mm": [
+      15,
+      34
+     ],
+     "box_mm": [
+      15,
+      40,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 2,
+     "kind": "texte",
+     "latex": "balayage exhaustif, au-delà nous basculons en BO. La",
+     "source": "04_synthese.tex:§30",
+     "ref_mm": [
+      15,
+      59
+     ],
+     "box_mm": [
+      15,
+      65,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 3,
+     "kind": "mixte",
+     "latex": "$D^{2}$ inchangé. Sur un spectre qui est un AGN, le",
+     "source": "04_synthese.tex:§74",
+     "ref_mm": [
+      15,
+      84
+     ],
+     "box_mm": [
+      15,
+      90,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 4,
+     "kind": "mixte",
+     "latex": "redshift ($z$) peut être multimodal (plusieurs",
+     "source": "04_synthese.tex:§52",
+     "ref_mm": [
+      15,
+      109
+     ],
+     "box_mm": [
+      15,
+      115,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 5,
+     "kind": "texte",
+     "latex": "Une fois la configuration de composants choisie, il",
+     "source": "05_bases.tex:§2",
+     "ref_mm": [
+      15,
+      134
+     ],
+     "box_mm": [
+      15,
+      140,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 6,
+     "kind": "texte",
+     "latex": "pour avoir un diagramme H-R complet afin d'y ajuster",
+     "source": "04_synthese.tex:§100",
+     "ref_mm": [
+      15,
+      159
+     ],
+     "box_mm": [
+      15,
+      165,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 7,
+     "kind": "mixte",
+     "latex": "($\\sum_{i}k_{i}=1$) fixe l'échelle. Il en découle une lecture",
+     "source": "02_contexte.tex:§20",
+     "ref_mm": [
+      15,
+      184
+     ],
+     "box_mm": [
+      15,
+      194,
+      180,
+      26
+     ]
+    },
+    {
+     "n": 8,
+     "kind": "mixte",
+     "latex": "alors figé à $0$, tombe à $p=1$: l'écart entre les deux",
+     "source": "04_synthese.tex:§21",
+     "ref_mm": [
+      15,
+      223
+     ],
+     "box_mm": [
+      15,
+      229,
+      180,
+      16
+     ]
+    }
+   ]
+  },
+  {
+   "id": "lot01-p020",
+   "zones": [
+    {
+     "n": 1,
+     "kind": "mixte",
+     "latex": "où $D^{2}$ est la distance synthétique de l'inversion, $n$ le",
+     "source": "04_synthese.tex:§23",
+     "ref_mm": [
+      15,
+      34
+     ],
+     "box_mm": [
+      15,
+      40,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 2,
+     "kind": "texte",
+     "latex": "synthèse de population stellaire, en quoi cela",
+     "source": "02_contexte.tex:§2",
+     "ref_mm": [
+      15,
+      59
+     ],
+     "box_mm": [
+      15,
+      65,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 3,
+     "kind": "texte",
+     "latex": "Bien qu'un BIC seul soit utile pour trouver le",
+     "source": "04_synthese.tex:§25",
+     "ref_mm": [
+      15,
+      84
+     ],
+     "box_mm": [
+      15,
+      90,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 4,
+     "kind": "texte",
+     "latex": "ne sont pas exactement comparables d'une base à",
+     "source": "05_bases.tex:§18",
+     "ref_mm": [
+      15,
+      109
+     ],
+     "box_mm": [
+      15,
+      115,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 5,
+     "kind": "texte",
+     "latex": "(calculée par transformée de Fourier rapide) et un",
+     "source": "04_synthese.tex:§12",
+     "ref_mm": [
+      15,
+      134
+     ],
+     "box_mm": [
+      15,
+      140,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 6,
+     "kind": "mixte",
+     "latex": "paramètre $j$ ramené dans $[0,1]$, $\\overline{D^{2}}$ est la moyenne des",
+     "source": "04_synthese.tex:§36",
+     "ref_mm": [
+      15,
+      159
+     ],
+     "box_mm": [
+      15,
+      165,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 7,
+     "kind": "texte",
+     "latex": "poussière monte. À chaque intensité, j'ai vérifié si",
+     "source": "06_monte_carlo.tex:§22",
+     "ref_mm": [
+      15,
+      184
+     ],
+     "box_mm": [
+      15,
+      190,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 8,
+     "kind": "texte",
+     "latex": "élément chimique est présent dans l'atmosphère d'une",
+     "source": "02_contexte.tex:§4",
+     "ref_mm": [
+      15,
+      209
+     ],
+     "box_mm": [
+      15,
+      215,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 9,
+     "kind": "texte",
+     "latex": "NGC 1566), à paramètres, fenêtre de normalisation et",
+     "source": "05_bases.tex:§18",
+     "ref_mm": [
+      15,
+      234
+     ],
+     "box_mm": [
+      15,
+      240,
+      180,
+      16
+     ]
+    }
+   ]
+  },
+  {
+   "id": "lot01-p021",
+   "zones": [
+    {
+     "n": 1,
+     "kind": "mixte",
+     "latex": "taille du marqueur (la contribution $k_{i}$) et non",
+     "source": "04_synthese.tex:§105",
+     "ref_mm": [
+      15,
+      34
+     ],
+     "box_mm": [
+      15,
+      40,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 2,
+     "kind": "mixte",
+     "latex": "$N_{\\text{indep}}$ est une propriété du bruit (structure de",
+     "source": "04_synthese.tex:§15",
+     "ref_mm": [
+      15,
+      59
+     ],
+     "box_mm": [
+      15,
+      65,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 3,
+     "kind": "texte",
+     "latex": "Une fois la prédiction faite, nous pouvons choisir le",
+     "source": "04_synthese.tex:§46",
+     "ref_mm": [
+      15,
+      84
+     ],
+     "box_mm": [
+      15,
+      90,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 4,
+     "kind": "texte",
+     "latex": "analogue (figure 2).",
+     "source": "05_bases.tex:§15",
+     "ref_mm": [
+      15,
+      109
+     ],
+     "box_mm": [
+      15,
+      115,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 5,
+     "kind": "mixte",
+     "latex": "comparées, constante qui s'annule dans le $\\Delta\\mathrm{BIC}$.",
+     "source": "04_synthese.tex:§21",
+     "ref_mm": [
+      15,
+      134
+     ],
+     "box_mm": [
+      15,
+      140,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 6,
+     "kind": "texte",
+     "latex": "interactions entre fenêtres, puis en",
+     "source": "03_interface.tex:§2",
+     "ref_mm": [
+      15,
+      159
+     ],
+     "box_mm": [
+      15,
+      165,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 7,
+     "kind": "texte",
+     "latex": "correspond à une mesure, un regroupement qu'aurait",
+     "source": "06b_cartes.tex:§9",
+     "ref_mm": [
+      15,
+      184
+     ],
+     "box_mm": [
+      15,
+      190,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 8,
+     "kind": "mixte",
+     "latex": "où $Y(u)$ est la valeur possible du $D^{2}$ standardisé en $u$,",
+     "source": "04_synthese.tex:§48",
+     "ref_mm": [
+      15,
+      209
+     ],
+     "box_mm": [
+      15,
+      215,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 9,
+     "kind": "texte",
+     "latex": "noyau de NGC 1365, autre noyau de Seyfert comme",
+     "source": "05_bases.tex:§18",
+     "ref_mm": [
+      15,
+      234
+     ],
+     "box_mm": [
+      15,
+      240,
+      180,
+      16
+     ]
+    }
+   ]
+  },
+  {
+   "id": "lot01-p022",
+   "zones": [
+    {
+     "n": 1,
+     "kind": "texte",
+     "latex": "accréter, autour d'un spaxel de départ ayant un bon",
+     "source": "06b_cartes.tex:§6",
+     "ref_mm": [
+      15,
+      34
+     ],
+     "box_mm": [
+      15,
+      40,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 2,
+     "kind": "mixte",
+     "latex": "décomposition QR de $S$. La racine des termes diagonaux,",
+     "source": "04_synthese.tex:§96",
+     "ref_mm": [
+      15,
+      59
+     ],
+     "box_mm": [
+      15,
+      65,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 3,
+     "kind": "texte",
+     "latex": "identiques pour toutes les configurations comparées,",
+     "source": "04_synthese.tex:§9",
+     "ref_mm": [
+      15,
+      84
+     ],
+     "box_mm": [
+      15,
+      90,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 4,
+     "kind": "mixte",
+     "latex": "grande norme résiduelle passe sous un seuil $s$. Nous",
+     "source": "04_synthese.tex:§99",
+     "ref_mm": [
+      15,
+      109
+     ],
+     "box_mm": [
+      15,
+      115,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 5,
+     "kind": "texte",
+     "latex": "Détecter un AGN demanderait un levier que le continu",
+     "source": "04_synthese.tex:§86",
+     "ref_mm": [
+      15,
+      134
+     ],
+     "box_mm": [
+      15,
+      140,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 6,
+     "kind": "mixte",
+     "latex": "à $40$, d'où ce réglage); sur une surface très",
+     "source": "04_synthese.tex:§54",
+     "ref_mm": [
+      15,
+      159
+     ],
+     "box_mm": [
+      15,
+      165,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 7,
+     "kind": "texte",
+     "latex": "Allons-y à vélo avec 7567 km parcourus à",
+     "source": "01_irap.tex:§18",
+     "ref_mm": [
+      15,
+      184
+     ],
+     "box_mm": [
+      15,
+      190,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 8,
+     "kind": "mixte",
+     "latex": "redonne l'observé à $4,5\\times10^{-8}$ près en écart relatif",
+     "source": "04_synthese.tex:§73",
+     "ref_mm": [
+      15,
+      209
+     ],
+     "box_mm": [
+      15,
+      215,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 9,
+     "kind": "mixte",
+     "latex": "point. Nous prendrons $\\xi=0,01$. L'EI est une espérance,",
+     "source": "04_synthese.tex:§48",
+     "ref_mm": [
+      15,
+      234
+     ],
+     "box_mm": [
+      15,
+      240,
+      180,
+      16
+     ]
+    }
+   ]
+  },
+  {
+   "id": "lot01-p023",
+   "zones": [
+    {
+     "n": 1,
+     "kind": "mixte",
+     "latex": "Nous remplaçons $n$ par le nombre effectif de pixels",
+     "source": "04_synthese.tex:§12",
+     "ref_mm": [
+      15,
+      34
+     ],
+     "box_mm": [
+      15,
+      40,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 2,
+     "kind": "texte",
+     "latex": "régions convexes. Elle reste encore peu utilisée dans",
+     "source": "06b_cartes.tex:§7",
+     "ref_mm": [
+      15,
+      59
+     ],
+     "box_mm": [
+      15,
+      65,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 3,
+     "kind": "texte",
+     "latex": "base à la volée sans relancer la sélection.",
+     "source": "annexes.tex:§23",
+     "ref_mm": [
+      15,
+      84
+     ],
+     "box_mm": [
+      15,
+      90,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 4,
+     "kind": "mixte",
+     "latex": "grâce au tirage de 2000 points au hasard dans $[0,1]^{d}$",
+     "source": "04_synthese.tex:§50",
+     "ref_mm": [
+      15,
+      109
+     ],
+     "box_mm": [
+      15,
+      115,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 5,
+     "kind": "mixte",
+     "latex": "dispersion de vitesse ($\\sigma_{v}$), la distance synthétique",
+     "source": "06b_cartes.tex:§11",
+     "ref_mm": [
+      15,
+      134
+     ],
+     "box_mm": [
+      15,
+      140,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 6,
+     "kind": "mixte",
+     "latex": "$N_{\\text{indep}}$ identique, le plus petit parmi les modèles de",
+     "source": "04_synthese.tex:§89",
+     "ref_mm": [
+      15,
+      159
+     ],
+     "box_mm": [
+      15,
+      165,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 7,
+     "kind": "texte",
+     "latex": "n'évaluons que les points les plus prometteurs,",
+     "source": "04_synthese.tex:§30",
+     "ref_mm": [
+      15,
+      184
+     ],
+     "box_mm": [
+      15,
+      190,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 8,
+     "kind": "mixte",
+     "latex": "contributions $k$.",
+     "source": "02_contexte.tex:§8",
+     "ref_mm": [
+      15,
+      209
+     ],
+     "box_mm": [
+      15,
+      215,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 9,
+     "kind": "mixte",
+     "latex": "étoiles soit $3$ étoiles sur $6$) avant de lancer 2000",
+     "source": "06_monte_carlo.tex:§10",
+     "ref_mm": [
+      15,
+      234
+     ],
+     "box_mm": [
+      15,
+      240,
+      180,
+      16
+     ]
+    }
+   ]
+  },
+  {
+   "id": "lot01-p024",
+   "zones": [
+    {
+     "n": 1,
+     "kind": "texte",
+     "latex": "Cartographier la population stellaire",
+     "source": "06b_cartes.tex:§1",
+     "ref_mm": [
+      15,
+      34
+     ],
+     "box_mm": [
+      15,
+      40,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 2,
+     "kind": "texte",
+     "latex": "trous s'adaptent. Il est ainsi possible de choisir la",
+     "source": "03_interface.tex:§16",
+     "ref_mm": [
+      15,
+      59
+     ],
+     "box_mm": [
+      15,
+      65,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 3,
+     "kind": "texte",
+     "latex": "d'onde (LSF) étale chaque détail sur plusieurs pixels)",
+     "source": "04_synthese.tex:§11",
+     "ref_mm": [
+      15,
+      84
+     ],
+     "box_mm": [
+      15,
+      90,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 4,
+     "kind": "texte",
+     "latex": "Nous rougissons les étoiles de référence en les",
+     "source": "02_contexte.tex:§27",
+     "ref_mm": [
+      15,
+      109
+     ],
+     "box_mm": [
+      15,
+      115,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 5,
+     "kind": "texte",
+     "latex": "l'instrument et à son pouvoir de résolution.",
+     "source": "02_contexte.tex:§28",
+     "ref_mm": [
+      15,
+      134
+     ],
+     "box_mm": [
+      15,
+      140,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 6,
+     "kind": "mixte",
+     "latex": "cas, l'axe $E(B-V)$ trouve un optimum négatif. Une",
+     "source": "05_bases.tex:§20",
+     "ref_mm": [
+      15,
+      159
+     ],
+     "box_mm": [
+      15,
+      165,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 7,
+     "kind": "texte",
+     "latex": "leurs raies superposées sont élargies par la",
+     "source": "02_contexte.tex:§28",
+     "ref_mm": [
+      15,
+      184
+     ],
+     "box_mm": [
+      15,
+      190,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 8,
+     "kind": "mixte",
+     "latex": "avec $\\rho(w)$ l'autocorrélation normalisée des $n$ pixels",
+     "source": "04_synthese.tex:§12",
+     "ref_mm": [
+      15,
+      209
+     ],
+     "box_mm": [
+      15,
+      215,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 9,
+     "kind": "texte",
+     "latex": "l'issue de mes études d'ingénieur et l'IRAP est une",
+     "source": "01_irap.tex:§2",
+     "ref_mm": [
+      15,
+      234
+     ],
+     "box_mm": [
+      15,
+      240,
+      180,
+      16
+     ]
+    }
+   ]
+  },
+  {
+   "id": "lot01-p025",
+   "zones": [
+    {
+     "n": 1,
+     "kind": "texte",
+     "latex": "mêmes paramètres initiaux avec comme seule différence",
+     "source": "06b_cartes.tex:§12",
+     "ref_mm": [
+      15,
+      34
+     ],
+     "box_mm": [
+      15,
+      40,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 2,
+     "kind": "texte",
+     "latex": "l'autre. Le solveur retrouve les contributions même à",
+     "source": "06_monte_carlo.tex:§8",
+     "ref_mm": [
+      15,
+      59
+     ],
+     "box_mm": [
+      15,
+      65,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 3,
+     "kind": "texte",
+     "latex": "Autres modifications",
+     "source": "03_interface.tex:§20",
+     "ref_mm": [
+      15,
+      84
+     ],
+     "box_mm": [
+      15,
+      90,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 4,
+     "kind": "texte",
+     "latex": "(§3), et la raison pour laquelle l'article n'emploie",
+     "source": "04_synthese.tex:§97",
+     "ref_mm": [
+      15,
+      109
+     ],
+     "box_mm": [
+      15,
+      115,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 5,
+     "kind": "texte",
+     "latex": "coronographe du Pic du Midi, qui est un instrument de",
+     "source": "01_irap.tex:§11",
+     "ref_mm": [
+      15,
+      134
+     ],
+     "box_mm": [
+      15,
+      140,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 6,
+     "kind": "mixte",
+     "latex": "vecteur de contributions $k$ qui minimise",
+     "source": "02_contexte.tex:§16",
+     "ref_mm": [
+      15,
+      159
+     ],
+     "box_mm": [
+      15,
+      165,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 7,
+     "kind": "texte",
+     "latex": "consommation énergétique associée à la méthode.",
+     "source": "01_irap.tex:§17",
+     "ref_mm": [
+      15,
+      184
+     ],
+     "box_mm": [
+      15,
+      190,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 8,
+     "kind": "texte",
+     "latex": "conditionné (étoiles quasi colinéaires), OSQP s'arrête",
+     "source": "06_monte_carlo.tex:§15",
+     "ref_mm": [
+      15,
+      209
+     ],
+     "box_mm": [
+      15,
+      215,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 9,
+     "kind": "texte",
+     "latex": "(H-R), qui porte la luminosité des étoiles en fonction",
+     "source": "02_contexte.tex:§4",
+     "ref_mm": [
+      15,
+      234
+     ],
+     "box_mm": [
+      15,
+      240,
+      180,
+      16
+     ]
+    }
+   ]
+  }
+ ]
+}

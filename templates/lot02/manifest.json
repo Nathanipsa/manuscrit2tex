@@ -1,0 +1,3321 @@
+{
+ "batch": "lot02",
+ "created": "2026-11-20",
+ "seed": 0,
+ "sources": [
+  "data/sources/rapport_maths_1.tex",
+  "data/sources/rapport_maths_2.tex",
+  "data/sources/rapport_maths_3.tex",
+  "data/sources/rapport_maths_4.tex"
+ ],
+ "page_mm": [
+  210,
+  297
+ ],
+ "aruco": {
+  "dict": "DICT_4X4_50",
+  "size_mm": 14,
+  "top_left_mm": {
+   "0": [
+    10,
+    10
+   ],
+   "1": [
+    186,
+    10
+   ],
+   "2": [
+    186,
+    273
+   ],
+   "3": [
+    10,
+    273
+   ]
+  }
+ },
+ "qr_mm": [
+  95,
+  7,
+  20
+ ],
+ "pages": [
+  {
+   "id": "lot02-p001",
+   "zones": [
+    {
+     "n": 1,
+     "kind": "formule",
+     "latex": "\\[\\Sigma=\\frac{1}{m-1}R_{cr}^{T}R_{cr}\\]",
+     "source": "rapport_maths_1.tex:§179",
+     "ref_mm": [
+      15,
+      34
+     ],
+     "box_mm": [
+      15,
+      44,
+      180,
+      26
+     ]
+    },
+    {
+     "n": 2,
+     "kind": "formule",
+     "latex": "\\[f_{k}(t)=t^{2}\\]",
+     "source": "rapport_maths_3.tex:§175",
+     "ref_mm": [
+      15,
+      73
+     ],
+     "box_mm": [
+      15,
+      79,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 3,
+     "kind": "texte",
+     "latex": "linéaire classique comme les moindres carrés. Nous",
+     "source": "rapport_maths_3.tex:§121",
+     "ref_mm": [
+      15,
+      98
+     ],
+     "box_mm": [
+      15,
+      104,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 4,
+     "kind": "mixte",
+     "latex": "Soit $u:]0,n+1[\\times]0,n+1[\\rightarrow\\mathbb{R}$, appliquons l'équation",
+     "source": "rapport_maths_4.tex:§228",
+     "ref_mm": [
+      15,
+      123
+     ],
+     "box_mm": [
+      15,
+      129,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 5,
+     "kind": "formule",
+     "latex": "\\[\\mathcal{F}(f)(\\alpha)=\\{\\begin{array}{cc}\\mathbb{R}\\longrightarrow&\\mathbb{C}\\\\\\alpha\\longmapsto&\\int_{-\\infty}^{+\\infty}f(t)e^{-i\\alpha t}dt\\end{array}\\]",
+     "source": "rapport_maths_2.tex:§13",
+     "ref_mm": [
+      15,
+      148
+     ],
+     "box_mm": [
+      15,
+      162,
+      180,
+      36
+     ]
+    },
+    {
+     "n": 6,
+     "kind": "texte",
+     "latex": "Nous allons maintenant comparer la méthode des",
+     "source": "rapport_maths_3.tex:§205",
+     "ref_mm": [
+      15,
+      201
+     ],
+     "box_mm": [
+      15,
+      207,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 7,
+     "kind": "formule",
+     "latex": "\\[c_{k,D}(f,\\omega)(t_{r})=f\\star\\omega\\]",
+     "source": "rapport_maths_2.tex:§221",
+     "ref_mm": [
+      15,
+      226
+     ],
+     "box_mm": [
+      15,
+      232,
+      180,
+      16
+     ]
+    }
+   ]
+  },
+  {
+   "id": "lot02-p002",
+   "zones": [
+    {
+     "n": 1,
+     "kind": "texte",
+     "latex": "Donc, d'après ces différentes propriétés, on en déduit",
+     "source": "rapport_maths_1.tex:§57",
+     "ref_mm": [
+      15,
+      34
+     ],
+     "box_mm": [
+      15,
+      40,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 2,
+     "kind": "formule",
+     "latex": "\\[=\\frac{1}{N}\\sum_{k=0}^{N-1}e^{-ihk(j-l)}\\]",
+     "source": "rapport_maths_2.tex:§107",
+     "ref_mm": [
+      15,
+      59
+     ],
+     "box_mm": [
+      15,
+      69,
+      180,
+      26
+     ]
+    },
+    {
+     "n": 3,
+     "kind": "formule",
+     "latex": "\\[\\Delta u=(L_{m}U+UL_{n})=(LU+UL),\\]",
+     "source": "rapport_maths_4.tex:§280",
+     "ref_mm": [
+      15,
+      98
+     ],
+     "box_mm": [
+      15,
+      104,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 4,
+     "kind": "texte",
+     "latex": "l'efficacité de notre code. Il nous est même possible",
+     "source": "rapport_maths_2.tex:§225",
+     "ref_mm": [
+      15,
+      123
+     ],
+     "box_mm": [
+      15,
+      129,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 5,
+     "kind": "mixte",
+     "latex": "Supposons donné un ensemble fini $E$ partitionné en deux",
+     "source": "rapport_maths_3.tex:§260",
+     "ref_mm": [
+      15,
+      148
+     ],
+     "box_mm": [
+      15,
+      154,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 6,
+     "kind": "texte",
+     "latex": "On peut alors facilement remplacer celle-ci dans la",
+     "source": "rapport_maths_3.tex:§291",
+     "ref_mm": [
+      15,
+      173
+     ],
+     "box_mm": [
+      15,
+      179,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 7,
+     "kind": "texte",
+     "latex": "Le choix du noyau est crucial et peut fortement",
+     "source": "rapport_maths_3.tex:§255",
+     "ref_mm": [
+      15,
+      198
+     ],
+     "box_mm": [
+      15,
+      204,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 8,
+     "kind": "formule",
+     "latex": "\\[f+g=(f_{0}+g_{0},f_{1}+g_{1},\\ldots,f_{N}+g_{N})\\in\\mathbb{C}^{N}\\]",
+     "source": "rapport_maths_2.tex:§48",
+     "ref_mm": [
+      15,
+      223
+     ],
+     "box_mm": [
+      15,
+      229,
+      180,
+      16
+     ]
+    }
+   ]
+  },
+  {
+   "id": "lot02-p003",
+   "zones": [
+    {
+     "n": 1,
+     "kind": "formule",
+     "latex": "$10^{-16}$.",
+     "source": "rapport_maths_2.tex:§190",
+     "ref_mm": [
+      15,
+      34
+     ],
+     "box_mm": [
+      15,
+      40,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 2,
+     "kind": "mixte",
+     "latex": "Comme pour l'ACP classique, chaque solution $v_{k}$ se",
+     "source": "rapport_maths_3.tex:§239",
+     "ref_mm": [
+      15,
+      59
+     ],
+     "box_mm": [
+      15,
+      65,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 3,
+     "kind": "mixte",
+     "latex": "A plus forte raison, démontrons maintenant que $f$ est",
+     "source": "rapport_maths_4.tex:§96",
+     "ref_mm": [
+      15,
+      84
+     ],
+     "box_mm": [
+      15,
+      90,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 4,
+     "kind": "mixte",
+     "latex": "les vecteurs propres de $Cov(X)$",
+     "source": "rapport_maths_1.tex:§65",
+     "ref_mm": [
+      15,
+      109
+     ],
+     "box_mm": [
+      15,
+      115,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 5,
+     "kind": "mixte",
+     "latex": "les équations de la proposition 3, on pose $L$ le",
+     "source": "rapport_maths_4.tex:§226",
+     "ref_mm": [
+      15,
+      134
+     ],
+     "box_mm": [
+      15,
+      140,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 6,
+     "kind": "mixte",
+     "latex": "spatiales que nous noterons $x$ et $y$. Posons dans un",
+     "source": "rapport_maths_4.tex:§10",
+     "ref_mm": [
+      15,
+      159
+     ],
+     "box_mm": [
+      15,
+      165,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 7,
+     "kind": "mixte",
+     "latex": "parcouru toutes les valeurs de la fonction $g$.",
+     "source": "rapport_maths_2.tex:§204",
+     "ref_mm": [
+      15,
+      184
+     ],
+     "box_mm": [
+      15,
+      190,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 8,
+     "kind": "texte",
+     "latex": "On retrouve donc,",
+     "source": "rapport_maths_3.tex:§172",
+     "ref_mm": [
+      15,
+      209
+     ],
+     "box_mm": [
+      15,
+      215,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 9,
+     "kind": "formule",
+     "latex": "\\[y_{i}\\in\\{-1,1\\}\\quad\\forall i\\in\\llbracket1,N\\rrbracket\\]",
+     "source": "rapport_maths_3.tex:§286",
+     "ref_mm": [
+      15,
+      234
+     ],
+     "box_mm": [
+      15,
+      240,
+      180,
+      16
+     ]
+    }
+   ]
+  },
+  {
+   "id": "lot02-p004",
+   "zones": [
+    {
+     "n": 1,
+     "kind": "formule",
+     "latex": "\\[c_{k,D}=\\frac{1}{N}\\sum_{j=0}^{N-1}f(t_{j})W_{N}^{(k-\\frac{N}{2})j}\\]",
+     "source": "rapport_maths_2.tex:§88",
+     "ref_mm": [
+      15,
+      34
+     ],
+     "box_mm": [
+      15,
+      44,
+      180,
+      26
+     ]
+    },
+    {
+     "n": 2,
+     "kind": "texte",
+     "latex": "plume, il nous est impossible de résoudre les",
+     "source": "rapport_maths_3.tex:§11",
+     "ref_mm": [
+      15,
+      73
+     ],
+     "box_mm": [
+      15,
+      79,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 3,
+     "kind": "texte",
+     "latex": "stockage qui peut rapidement devenir un problème. La",
+     "source": "rapport_maths_3.tex:§253",
+     "ref_mm": [
+      15,
+      98
+     ],
+     "box_mm": [
+      15,
+      104,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 4,
+     "kind": "mixte",
+     "latex": "vecteurs $v_{i}\\forall i\\in\\llbracket1,k\\rrbracket$.",
+     "source": "rapport_maths_1.tex:§24",
+     "ref_mm": [
+      15,
+      123
+     ],
+     "box_mm": [
+      15,
+      129,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 5,
+     "kind": "formule",
+     "latex": "\\[||A||_{F}=\\sqrt{n}\\]",
+     "source": "rapport_maths_1.tex:§167",
+     "ref_mm": [
+      15,
+      148
+     ],
+     "box_mm": [
+      15,
+      154,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 6,
+     "kind": "texte",
+     "latex": "d'Hadamard de deux matrices positives semi-définies",
+     "source": "rapport_maths_3.tex:§78",
+     "ref_mm": [
+      15,
+      173
+     ],
+     "box_mm": [
+      15,
+      179,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 7,
+     "kind": "formule",
+     "latex": "\\[-\\frac{1}{\\epsilon_{0}}\\rho(x,y)=\\frac{\\partial^{2}L}{\\partial_{x}V^{2}}+\\frac{\\partial L^{2}}{\\partial_{y}V^{2}}\\]",
+     "source": "rapport_maths_4.tex:§175",
+     "ref_mm": [
+      15,
+      198
+     ],
+     "box_mm": [
+      15,
+      208,
+      180,
+      26
+     ]
+    },
+    {
+     "n": 8,
+     "kind": "mixte",
+     "latex": "données par la fonction $\\phi(\\cdot)$. Cela implique qu'il",
+     "source": "rapport_maths_3.tex:§239",
+     "ref_mm": [
+      15,
+      237
+     ],
+     "box_mm": [
+      15,
+      243,
+      180,
+      16
+     ]
+    }
+   ]
+  },
+  {
+   "id": "lot02-p005",
+   "zones": [
+    {
+     "n": 1,
+     "kind": "texte",
+     "latex": "Dérivée directionnelle",
+     "source": "rapport_maths_4.tex:§23",
+     "ref_mm": [
+      15,
+      34
+     ],
+     "box_mm": [
+      15,
+      40,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 2,
+     "kind": "formule",
+     "latex": "$k_{1}:E\\times E\\rightarrow\\mathbb{E}$.",
+     "source": "rapport_maths_3.tex:§84",
+     "ref_mm": [
+      15,
+      59
+     ],
+     "box_mm": [
+      15,
+      65,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 3,
+     "kind": "mixte",
+     "latex": "De plus, on sait que V est nul sur $\\partial\\Omega$ donc, on",
+     "source": "rapport_maths_4.tex:§180",
+     "ref_mm": [
+      15,
+      84
+     ],
+     "box_mm": [
+      15,
+      90,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 4,
+     "kind": "texte",
+     "latex": "car il permet de grandement simplifier la vie des",
+     "source": "rapport_maths_2.tex:§196",
+     "ref_mm": [
+      15,
+      109
+     ],
+     "box_mm": [
+      15,
+      115,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 5,
+     "kind": "mixte",
+     "latex": "Soient $\\lambda$ et $\\mu$ des scalaires et $f$, $g$ des fonctions",
+     "source": "rapport_maths_2.tex:§15",
+     "ref_mm": [
+      15,
+      134
+     ],
+     "box_mm": [
+      15,
+      140,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 6,
+     "kind": "formule",
+     "latex": "\\[k_{e}(x,y)=e^{k_{1}(x,y)}\\]",
+     "source": "rapport_maths_3.tex:§98",
+     "ref_mm": [
+      15,
+      159
+     ],
+     "box_mm": [
+      15,
+      165,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 7,
+     "kind": "texte",
+     "latex": "peut ne s'exprimer qu'avec des produits scalaires:",
+     "source": "rapport_maths_3.tex:§280",
+     "ref_mm": [
+      15,
+      184
+     ],
+     "box_mm": [
+      15,
+      190,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 8,
+     "kind": "formule",
+     "latex": "\\[\\min_{x}\\frac{1}{2}\\|s-Dx\\|_{2}^{2}+\\frac{\\tau}{2}\\|x\\|_{2}^{2}\\]",
+     "source": "rapport_maths_3.tex:§220",
+     "ref_mm": [
+      15,
+      209
+     ],
+     "box_mm": [
+      15,
+      219,
+      180,
+      26
+     ]
+    }
+   ]
+  },
+  {
+   "id": "lot02-p006",
+   "zones": [
+    {
+     "n": 1,
+     "kind": "formule",
+     "latex": "\\[\\|A\\|_{F}^{2}=\\text{Trace}(A^{T}A)\\]",
+     "source": "rapport_maths_3.tex:§320",
+     "ref_mm": [
+      15,
+      34
+     ],
+     "box_mm": [
+      15,
+      40,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 2,
+     "kind": "formule",
+     "latex": "\\[f^{(c)}(x)=\\sum_{i=1}^{m}a_{c}^{*}(i)k(x_{i},x)\\]",
+     "source": "rapport_maths_3.tex:§199",
+     "ref_mm": [
+      15,
+      59
+     ],
+     "box_mm": [
+      15,
+      69,
+      180,
+      26
+     ]
+    },
+    {
+     "n": 3,
+     "kind": "texte",
+     "latex": "Fourier complexes discrets.",
+     "source": "rapport_maths_2.tex:§79",
+     "ref_mm": [
+      15,
+      98
+     ],
+     "box_mm": [
+      15,
+      104,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 4,
+     "kind": "mixte",
+     "latex": "Soient deux entiers $I$ et $j$ tels que: $0\\leq I,j\\leq N-1$:",
+     "source": "rapport_maths_2.tex:§99",
+     "ref_mm": [
+      15,
+      123
+     ],
+     "box_mm": [
+      15,
+      129,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 5,
+     "kind": "formule",
+     "latex": "$\\frac{\\partial L}{\\partial u}=s(x,t)$",
+     "source": "rapport_maths_4.tex:§66",
+     "ref_mm": [
+      15,
+      148
+     ],
+     "box_mm": [
+      15,
+      158,
+      180,
+      26
+     ]
+    },
+    {
+     "n": 6,
+     "kind": "mixte",
+     "latex": "où $I$ est la matrice identité et $1_{n}$ est le vecteur",
+     "source": "rapport_maths_3.tex:§237",
+     "ref_mm": [
+      15,
+      187
+     ],
+     "box_mm": [
+      15,
+      193,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 7,
+     "kind": "mixte",
+     "latex": "$\\langle x,A(y)\\rangle=\\langle A(x),y\\rangle$ et $A(x+th)=A(x)+tA(h)$",
+     "source": "rapport_maths_4.tex:§124",
+     "ref_mm": [
+      15,
+      212
+     ],
+     "box_mm": [
+      15,
+      218,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 8,
+     "kind": "texte",
+     "latex": "noyaux en étudiant les propriétés des noyaux",
+     "source": "rapport_maths_3.tex:§5",
+     "ref_mm": [
+      15,
+      237
+     ],
+     "box_mm": [
+      15,
+      243,
+      180,
+      16
+     ]
+    }
+   ]
+  },
+  {
+   "id": "lot02-p007",
+   "zones": [
+    {
+     "n": 1,
+     "kind": "texte",
+     "latex": "Le calcul des coefficients complexes de Fourier",
+     "source": "rapport_maths_2.tex:§81",
+     "ref_mm": [
+      15,
+      34
+     ],
+     "box_mm": [
+      15,
+      40,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 2,
+     "kind": "formule",
+     "latex": "\\[\\Longleftrightarrow J(z)\\leq(1-\\theta)J(x)+\\theta J(y)\\]",
+     "source": "rapport_maths_4.tex:§113",
+     "ref_mm": [
+      15,
+      59
+     ],
+     "box_mm": [
+      15,
+      65,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 3,
+     "kind": "mixte",
+     "latex": "aléatoire de composantes $X_{i}$ toutes des V.A.R.s et $v$ un",
+     "source": "rapport_maths_1.tex:§32",
+     "ref_mm": [
+      15,
+      84
+     ],
+     "box_mm": [
+      15,
+      90,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 4,
+     "kind": "mixte",
+     "latex": "telle que: $\\alpha(i)=x_{i}$ pour $i\\in\\{1,\\ldots,p\\}$ avec $p\\in\\mathbb{N}^{*}$.",
+     "source": "rapport_maths_3.tex:§22",
+     "ref_mm": [
+      15,
+      109
+     ],
+     "box_mm": [
+      15,
+      115,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 5,
+     "kind": "texte",
+     "latex": "On propose le code principal suivant:",
+     "source": "rapport_maths_1.tex:§228",
+     "ref_mm": [
+      15,
+      134
+     ],
+     "box_mm": [
+      15,
+      140,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 6,
+     "kind": "mixte",
+     "latex": "version discrétisée de $\\Omega$. Pour une image, on supposera",
+     "source": "rapport_maths_4.tex:§240",
+     "ref_mm": [
+      15,
+      159
+     ],
+     "box_mm": [
+      15,
+      165,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 7,
+     "kind": "mixte",
+     "latex": "$\\phi$ mais à chercher une nouvelle application $k$ qui sera",
+     "source": "rapport_maths_3.tex:§17",
+     "ref_mm": [
+      15,
+      184
+     ],
+     "box_mm": [
+      15,
+      190,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 8,
+     "kind": "texte",
+     "latex": "nécessairement un minimum global.",
+     "source": "rapport_maths_4.tex:§116",
+     "ref_mm": [
+      15,
+      209
+     ],
+     "box_mm": [
+      15,
+      215,
+      180,
+      16
+     ]
+    }
+   ]
+  },
+  {
+   "id": "lot02-p008",
+   "zones": [
+    {
+     "n": 1,
+     "kind": "formule",
+     "latex": "\\[c_{k,D}:=\\frac{1}{2\\pi}\\int_{0}^{2\\pi}(t\\longmapsto f(t)e^{-i(k-\\frac{N}{2})t})_{D}dt\\]",
+     "source": "rapport_maths_2.tex:§80",
+     "ref_mm": [
+      15,
+      34
+     ],
+     "box_mm": [
+      15,
+      44,
+      180,
+      26
+     ]
+    },
+    {
+     "n": 2,
+     "kind": "mixte",
+     "latex": "Soit $k_{1}$ et $k_{2}$ deux noyaux positifs. Alors, la somme de",
+     "source": "rapport_maths_3.tex:§74",
+     "ref_mm": [
+      15,
+      73
+     ],
+     "box_mm": [
+      15,
+      79,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 3,
+     "kind": "texte",
+     "latex": "que l'on appelle un spectrogramme. En traitement de",
+     "source": "rapport_maths_2.tex:§222",
+     "ref_mm": [
+      15,
+      98
+     ],
+     "box_mm": [
+      15,
+      104,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 4,
+     "kind": "texte",
+     "latex": "d'entraînement.",
+     "source": "rapport_maths_3.tex:§335",
+     "ref_mm": [
+      15,
+      123
+     ],
+     "box_mm": [
+      15,
+      129,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 5,
+     "kind": "formule",
+     "latex": "\\[X=\\begin{pmatrix}0&0\\\\0&0\\end{pmatrix}\\]",
+     "source": "rapport_maths_4.tex:§164",
+     "ref_mm": [
+      15,
+      148
+     ],
+     "box_mm": [
+      15,
+      162,
+      180,
+      36
+     ]
+    },
+    {
+     "n": 6,
+     "kind": "formule",
+     "latex": "\\[=k(x,x)+k(y,y)-2k(x,y)\\]",
+     "source": "rapport_maths_3.tex:§107",
+     "ref_mm": [
+      15,
+      201
+     ],
+     "box_mm": [
+      15,
+      207,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 7,
+     "kind": "formule",
+     "latex": "\\[max\\sum_{i=1}^{N}\\alpha_{i}-\\frac{1}{2}\\sum_{i=1}^{N}\\sum_{j=1}^{N}\\alpha_{i}\\alpha_{j}y_{i}y_{j}k(x_{i},x_{j})\\]",
+     "source": "rapport_maths_3.tex:§292",
+     "ref_mm": [
+      15,
+      226
+     ],
+     "box_mm": [
+      15,
+      236,
+      180,
+      26
+     ]
+    }
+   ]
+  },
+  {
+   "id": "lot02-p009",
+   "zones": [
+    {
+     "n": 1,
+     "kind": "texte",
+     "latex": "équation d'ondes classique. Physiquement, cela",
+     "source": "rapport_maths_4.tex:§62",
+     "ref_mm": [
+      15,
+      34
+     ],
+     "box_mm": [
+      15,
+      40,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 2,
+     "kind": "formule",
+     "latex": "\\[R_{f}(\\tau)=\\mathcal{F}^{-1}(\\mathcal{F}(f)\\overline{\\mathcal{F}(f)})(\\tau)\\]",
+     "source": "rapport_maths_2.tex:§152",
+     "ref_mm": [
+      15,
+      59
+     ],
+     "box_mm": [
+      15,
+      65,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 3,
+     "kind": "mixte",
+     "latex": "- Les termes $|f_{k}|^{2}$ sont toujours positifs ou nuls.",
+     "source": "rapport_maths_2.tex:§61",
+     "ref_mm": [
+      15,
+      84
+     ],
+     "box_mm": [
+      15,
+      90,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 4,
+     "kind": "texte",
+     "latex": "compressé. Pour restituer le signal audio, une",
+     "source": "rapport_maths_2.tex:§82",
+     "ref_mm": [
+      15,
+      109
+     ],
+     "box_mm": [
+      15,
+      115,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 5,
+     "kind": "texte",
+     "latex": "linéaire et de projeter nos données dans un espace de",
+     "source": "rapport_maths_3.tex:§13",
+     "ref_mm": [
+      15,
+      134
+     ],
+     "box_mm": [
+      15,
+      140,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 6,
+     "kind": "texte",
+     "latex": "cachant derrière la transformée de Fourier discrète,",
+     "source": "rapport_maths_2.tex:§4",
+     "ref_mm": [
+      15,
+      159
+     ],
+     "box_mm": [
+      15,
+      165,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 7,
+     "kind": "mixte",
+     "latex": "On notera un élément de $H$ par: $u:\\Omega\\rightarrow C$ et l'on notera",
+     "source": "rapport_maths_4.tex:§14",
+     "ref_mm": [
+      15,
+      184
+     ],
+     "box_mm": [
+      15,
+      190,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 8,
+     "kind": "mixte",
+     "latex": "soustraire à chaque ligne de $A$ le vecteur moyen $l_{g}$.",
+     "source": "rapport_maths_1.tex:§116",
+     "ref_mm": [
+      15,
+      209
+     ],
+     "box_mm": [
+      15,
+      215,
+      180,
+      16
+     ]
+    }
+   ]
+  },
+  {
+   "id": "lot02-p010",
+   "zones": [
+    {
+     "n": 1,
+     "kind": "formule",
+     "latex": "\\[\\delta=w^{T}x_{i0}-b=-w_{j0}^{T}+b=\\frac{min_{i}(w^{T}x_{i})-max_{j}(w^{T}x_{j})}{2}\\]",
+     "source": "rapport_maths_3.tex:§267",
+     "ref_mm": [
+      15,
+      34
+     ],
+     "box_mm": [
+      15,
+      44,
+      180,
+      26
+     ]
+    },
+    {
+     "n": 2,
+     "kind": "texte",
+     "latex": "données est égale à la somme des variances de",
+     "source": "rapport_maths_1.tex:§205",
+     "ref_mm": [
+      15,
+      73
+     ],
+     "box_mm": [
+      15,
+      79,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 3,
+     "kind": "formule",
+     "latex": "\\[S_{N}^{D}(f)(t)=\\sum_{k=0}^{N-1}c_{k,D}(f)e^{i(k-\\frac{N}{2})t}\\]",
+     "source": "rapport_maths_2.tex:§96",
+     "ref_mm": [
+      15,
+      98
+     ],
+     "box_mm": [
+      15,
+      108,
+      180,
+      26
+     ]
+    },
+    {
+     "n": 4,
+     "kind": "formule",
+     "latex": "\\[R_{f}(j)=\\mathcal{F}_{d}^{-1}(F_{d}(f)\\overline{F_{d}(f)})[j]\\]",
+     "source": "rapport_maths_2.tex:§154",
+     "ref_mm": [
+      15,
+      137
+     ],
+     "box_mm": [
+      15,
+      143,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 5,
+     "kind": "mixte",
+     "latex": "qu'un point $(x,y)\\in\\Omega$ correspond à la position d'un",
+     "source": "rapport_maths_4.tex:§240",
+     "ref_mm": [
+      15,
+      162
+     ],
+     "box_mm": [
+      15,
+      168,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 6,
+     "kind": "texte",
+     "latex": "linéaire afin de pouvoir effectuer nos calculs.",
+     "source": "rapport_maths_3.tex:§34",
+     "ref_mm": [
+      15,
+      187
+     ],
+     "box_mm": [
+      15,
+      193,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 7,
+     "kind": "texte",
+     "latex": "puisse séparer les deux classes. Cependant, on peut",
+     "source": "rapport_maths_3.tex:§249",
+     "ref_mm": [
+      15,
+      212
+     ],
+     "box_mm": [
+      15,
+      218,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 8,
+     "kind": "texte",
+     "latex": "obtenues, le choix du noyau, et enfin l'implémentation",
+     "source": "rapport_maths_3.tex:§348",
+     "ref_mm": [
+      15,
+      237
+     ],
+     "box_mm": [
+      15,
+      243,
+      180,
+      16
+     ]
+    }
+   ]
+  },
+  {
+   "id": "lot02-p011",
+   "zones": [
+    {
+     "n": 1,
+     "kind": "texte",
+     "latex": "de certaines parties de code avec notre sujet de BE.",
+     "source": "rapport_maths_2.tex:§4",
+     "ref_mm": [
+      15,
+      34
+     ],
+     "box_mm": [
+      15,
+      40,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 2,
+     "kind": "mixte",
+     "latex": "une fonction de la forme pour $x\\in E$:",
+     "source": "rapport_maths_4.tex:§75",
+     "ref_mm": [
+      15,
+      59
+     ],
+     "box_mm": [
+      15,
+      65,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 3,
+     "kind": "texte",
+     "latex": "est la somme de deux matrices positives semi-définies.",
+     "source": "rapport_maths_3.tex:§71",
+     "ref_mm": [
+      15,
+      84
+     ],
+     "box_mm": [
+      15,
+      90,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 4,
+     "kind": "texte",
+     "latex": "surapprentissage, il suffit de rajouter un terme de",
+     "source": "rapport_maths_3.tex:§221",
+     "ref_mm": [
+      15,
+      109
+     ],
+     "box_mm": [
+      15,
+      115,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 5,
+     "kind": "texte",
+     "latex": "Il est tout à fait normal de penser qu'une telle",
+     "source": "rapport_maths_3.tex:§27",
+     "ref_mm": [
+      15,
+      134
+     ],
+     "box_mm": [
+      15,
+      140,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 6,
+     "kind": "formule",
+     "latex": "\\[K^{T}KA+\\lambda A=K^{T}B\\]",
+     "source": "rapport_maths_3.tex:§327",
+     "ref_mm": [
+      15,
+      159
+     ],
+     "box_mm": [
+      15,
+      165,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 7,
+     "kind": "mixte",
+     "latex": "temporelle apportée par la nouvelle application $\\omega$",
+     "source": "rapport_maths_2.tex:§218",
+     "ref_mm": [
+      15,
+      184
+     ],
+     "box_mm": [
+      15,
+      190,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 8,
+     "kind": "formule",
+     "latex": "$V_{i},j:=V(x_{i},y_{i})$",
+     "source": "rapport_maths_4.tex:§183",
+     "ref_mm": [
+      15,
+      209
+     ],
+     "box_mm": [
+      15,
+      215,
+      180,
+      16
+     ]
+    }
+   ]
+  },
+  {
+   "id": "lot02-p012",
+   "zones": [
+    {
+     "n": 1,
+     "kind": "formule",
+     "latex": "\\[Y_{1}:=X_{v_{1}}=\\sum_{i=1}^{n}v_{1i}X_{i}\\]",
+     "source": "rapport_maths_1.tex:§17",
+     "ref_mm": [
+      15,
+      34
+     ],
+     "box_mm": [
+      15,
+      44,
+      180,
+      26
+     ]
+    },
+    {
+     "n": 2,
+     "kind": "texte",
+     "latex": "convexes est bien convexe",
+     "source": "rapport_maths_4.tex:§89",
+     "ref_mm": [
+      15,
+      73
+     ],
+     "box_mm": [
+      15,
+      79,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 3,
+     "kind": "mixte",
+     "latex": "fonctions convexes sur $E$ dans $\\mathbb{R}$ forme une fonction",
+     "source": "rapport_maths_4.tex:§78",
+     "ref_mm": [
+      15,
+      98
+     ],
+     "box_mm": [
+      15,
+      104,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 4,
+     "kind": "formule",
+     "latex": "\\[D=\\text{diag}(\\frac{1}{\\|c_{1}\\|_{2}},\\frac{1}{\\|c_{2}\\|_{2}},\\ldots,\\frac{1}{\\|c_{n}\\|_{2}})\\]",
+     "source": "rapport_maths_1.tex:§148",
+     "ref_mm": [
+      15,
+      123
+     ],
+     "box_mm": [
+      15,
+      133,
+      180,
+      26
+     ]
+    },
+    {
+     "n": 5,
+     "kind": "mixte",
+     "latex": "$E=\\mathcal{M}_{m,n}(\\mathbb{R}),\\langle\\bullet,\\bullet\\rangle=\\text{Trace}(\\bullet^{T}\\bullet),A(x):=PX+QX$ et:",
+     "source": "rapport_maths_4.tex:§145",
+     "ref_mm": [
+      15,
+      162
+     ],
+     "box_mm": [
+      15,
+      168,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 6,
+     "kind": "texte",
+     "latex": "\\vskip.5cm On retrouve bien l'approximation de second",
+     "source": "rapport_maths_4.tex:§188",
+     "ref_mm": [
+      15,
+      187
+     ],
+     "box_mm": [
+      15,
+      193,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 7,
+     "kind": "texte",
+     "latex": "En revanche, ces codes et notamment la reconstruction",
+     "source": "rapport_maths_2.tex:§190",
+     "ref_mm": [
+      15,
+      212
+     ],
+     "box_mm": [
+      15,
+      218,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 8,
+     "kind": "formule",
+     "latex": "\\[K_{ij}=k(x_{i},x_{j})\\]",
+     "source": "rapport_maths_3.tex:§237",
+     "ref_mm": [
+      15,
+      237
+     ],
+     "box_mm": [
+      15,
+      243,
+      180,
+      16
+     ]
+    }
+   ]
+  },
+  {
+   "id": "lot02-p013",
+   "zones": [
+    {
+     "n": 1,
+     "kind": "texte",
+     "latex": "fondamentaux de l'astuce des noyaux en montrant leur",
+     "source": "rapport_maths_3.tex:§346",
+     "ref_mm": [
+      15,
+      34
+     ],
+     "box_mm": [
+      15,
+      40,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 2,
+     "kind": "formule",
+     "latex": "\\[f:=(f_{0},\\ldots,f_{N-1})^{T}\\]",
+     "source": "rapport_maths_2.tex:§163",
+     "ref_mm": [
+      15,
+      59
+     ],
+     "box_mm": [
+      15,
+      65,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 3,
+     "kind": "formule",
+     "latex": "\\[d(x,y)_{H}=\\|\\phi(x)-\\phi(y)\\|_{H}^{2}\\]",
+     "source": "rapport_maths_3.tex:§104",
+     "ref_mm": [
+      15,
+      84
+     ],
+     "box_mm": [
+      15,
+      90,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 4,
+     "kind": "formule",
+     "latex": "\\[W_{N}:=e^{-ih}=e^{-i\\frac{2\\pi}{N}}\\]",
+     "source": "rapport_maths_2.tex:§85",
+     "ref_mm": [
+      15,
+      109
+     ],
+     "box_mm": [
+      15,
+      119,
+      180,
+      26
+     ]
+    },
+    {
+     "n": 5,
+     "kind": "formule",
+     "latex": "\\[x^{*}=\\underset{x\\in\\mathbb{R}^{2}}{argmin}\\|Ax-b\\|^{2}\\]",
+     "source": "rapport_maths_3.tex:§155",
+     "ref_mm": [
+      15,
+      148
+     ],
+     "box_mm": [
+      15,
+      158,
+      180,
+      26
+     ]
+    },
+    {
+     "n": 6,
+     "kind": "formule",
+     "latex": "\\[\\overline{X_{mi}}:=\\frac{1}{m}\\sum_{k=1}^{m}X_{ki}\\quad\\overline{S_{mi}}:=\\frac{1}{m-1}\\sum_{k=1}^{m}(X_{ki}-\\overline{X_{mi}})^{2}\\]",
+     "source": "rapport_maths_1.tex:§90",
+     "ref_mm": [
+      15,
+      187
+     ],
+     "box_mm": [
+      15,
+      197,
+      180,
+      26
+     ]
+    },
+    {
+     "n": 7,
+     "kind": "formule",
+     "latex": "\\[h(x)=f(x)+g(x)\\]",
+     "source": "rapport_maths_4.tex:§81",
+     "ref_mm": [
+      15,
+      226
+     ],
+     "box_mm": [
+      15,
+      232,
+      180,
+      16
+     ]
+    }
+   ]
+  },
+  {
+   "id": "lot02-p014",
+   "zones": [
+    {
+     "n": 1,
+     "kind": "texte",
+     "latex": "donc résoudre notre problème avec l'algorithme du",
+     "source": "rapport_maths_4.tex:§299",
+     "ref_mm": [
+      15,
+      34
+     ],
+     "box_mm": [
+      15,
+      40,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 2,
+     "kind": "texte",
+     "latex": "bruitées, classes proches), les méthodes à \"marge",
+     "source": "rapport_maths_3.tex:§234",
+     "ref_mm": [
+      15,
+      59
+     ],
+     "box_mm": [
+      15,
+      65,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 3,
+     "kind": "mixte",
+     "latex": "à chaque colonne de $A$:",
+     "source": "rapport_maths_1.tex:§149",
+     "ref_mm": [
+      15,
+      84
+     ],
+     "box_mm": [
+      15,
+      90,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 4,
+     "kind": "texte",
+     "latex": "croix). Il est encore une fois impossible pour une SVM",
+     "source": "rapport_maths_3.tex:§301",
+     "ref_mm": [
+      15,
+      109
+     ],
+     "box_mm": [
+      15,
+      115,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 5,
+     "kind": "mixte",
+     "latex": "est bien un produit scalaire hermitien dans $\\mathbb{C}^{N}$.",
+     "source": "rapport_maths_2.tex:§65",
+     "ref_mm": [
+      15,
+      134
+     ],
+     "box_mm": [
+      15,
+      140,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 6,
+     "kind": "mixte",
+     "latex": "Soit $f$ une fonction de classe $C^{1}$ dont la dérivée est",
+     "source": "rapport_maths_2.tex:§22",
+     "ref_mm": [
+      15,
+      159
+     ],
+     "box_mm": [
+      15,
+      165,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 7,
+     "kind": "texte",
+     "latex": "Un dernier exemple actuel",
+     "source": "rapport_maths_2.tex:§226",
+     "ref_mm": [
+      15,
+      184
+     ],
+     "box_mm": [
+      15,
+      190,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 8,
+     "kind": "texte",
+     "latex": "Afin de mettre en application l'ensemble des",
+     "source": "rapport_maths_1.tex:§163",
+     "ref_mm": [
+      15,
+      209
+     ],
+     "box_mm": [
+      15,
+      215,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 9,
+     "kind": "texte",
+     "latex": "lorsque l'on vient juste de s'adonner à ces",
+     "source": "rapport_maths_3.tex:§343",
+     "ref_mm": [
+      15,
+      234
+     ],
+     "box_mm": [
+      15,
+      240,
+      180,
+      16
+     ]
+    }
+   ]
+  },
+  {
+   "id": "lot02-p015",
+   "zones": [
+    {
+     "n": 1,
+     "kind": "formule",
+     "latex": "$v_{k}^{T}v_{k}=1$.",
+     "source": "rapport_maths_1.tex:§78",
+     "ref_mm": [
+      15,
+      34
+     ],
+     "box_mm": [
+      15,
+      40,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 2,
+     "kind": "texte",
+     "latex": "Notre vecteur aléatoire est défini sur un espace",
+     "source": "rapport_maths_1.tex:§12",
+     "ref_mm": [
+      15,
+      59
+     ],
+     "box_mm": [
+      15,
+      65,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 3,
+     "kind": "formule",
+     "latex": "\\[x^{*}=\\underset{x\\in\\mathbb{R}^{n}}{argmin}\\sum_{i=1}^{m}(W_{i}^{T}x-b_{i})^{2}\\]",
+     "source": "rapport_maths_3.tex:§129",
+     "ref_mm": [
+      15,
+      84
+     ],
+     "box_mm": [
+      15,
+      94,
+      180,
+      26
+     ]
+    },
+    {
+     "n": 4,
+     "kind": "formule",
+     "latex": "$\\Delta V(x,y)=\\frac{\\partial^{2}V}{\\partial x^{2}}(x,y)+\\frac{\\partial^{2}V}{\\partial y^{2}}(x,y)$",
+     "source": "rapport_maths_4.tex:§194",
+     "ref_mm": [
+      15,
+      123
+     ],
+     "box_mm": [
+      15,
+      133,
+      180,
+      26
+     ]
+    },
+    {
+     "n": 5,
+     "kind": "formule",
+     "latex": "\\[=e^{-i(k-\\frac{N}{2})(l-j)h}\\]",
+     "source": "rapport_maths_2.tex:§118",
+     "ref_mm": [
+      15,
+      162
+     ],
+     "box_mm": [
+      15,
+      172,
+      180,
+      26
+     ]
+    },
+    {
+     "n": 6,
+     "kind": "mixte",
+     "latex": "corde est forcé par une fonction $s$ définie sur $\\Omega$ à",
+     "source": "rapport_maths_4.tex:§63",
+     "ref_mm": [
+      15,
+      201
+     ],
+     "box_mm": [
+      15,
+      207,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 7,
+     "kind": "texte",
+     "latex": "données initiales, quoiqu'elles soient centrées et",
+     "source": "rapport_maths_1.tex:§226",
+     "ref_mm": [
+      15,
+      226
+     ],
+     "box_mm": [
+      15,
+      232,
+      180,
+      16
+     ]
+    }
+   ]
+  },
+  {
+   "id": "lot02-p016",
+   "zones": [
+    {
+     "n": 1,
+     "kind": "mixte",
+     "latex": "matrice de taille $(m,n)$:",
+     "source": "rapport_maths_1.tex:§100",
+     "ref_mm": [
+      15,
+      34
+     ],
+     "box_mm": [
+      15,
+      40,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 2,
+     "kind": "mixte",
+     "latex": "d'un vecteur $v$ fixé dans $\\Omega$.",
+     "source": "rapport_maths_4.tex:§20",
+     "ref_mm": [
+      15,
+      59
+     ],
+     "box_mm": [
+      15,
+      65,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 3,
+     "kind": "mixte",
+     "latex": "$c$ le nombre de classes",
+     "source": "rapport_maths_3.tex:§307",
+     "ref_mm": [
+      15,
+      84
+     ],
+     "box_mm": [
+      15,
+      90,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 4,
+     "kind": "formule",
+     "latex": "\\[=\\alpha\\langle f,g\\rangle+\\beta\\langle h,g\\rangle\\]",
+     "source": "rapport_maths_2.tex:§54",
+     "ref_mm": [
+      15,
+      109
+     ],
+     "box_mm": [
+      15,
+      115,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 5,
+     "kind": "formule",
+     "latex": "\\[A^{-1}c=f\\]",
+     "source": "rapport_maths_2.tex:§172",
+     "ref_mm": [
+      15,
+      134
+     ],
+     "box_mm": [
+      15,
+      140,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 6,
+     "kind": "texte",
+     "latex": "Le determinant de cette matrice étant non nul, on peut",
+     "source": "rapport_maths_3.tex:§160",
+     "ref_mm": [
+      15,
+      159
+     ],
+     "box_mm": [
+      15,
+      165,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 7,
+     "kind": "texte",
+     "latex": "nous au cas particulier de l'équation de Silverster.",
+     "source": "rapport_maths_4.tex:§142",
+     "ref_mm": [
+      15,
+      184
+     ],
+     "box_mm": [
+      15,
+      190,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 8,
+     "kind": "texte",
+     "latex": "d'Études, nous nous intéressons à lACP, une méthode",
+     "source": "rapport_maths_1.tex:§4",
+     "ref_mm": [
+      15,
+      209
+     ],
+     "box_mm": [
+      15,
+      215,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 9,
+     "kind": "texte",
+     "latex": "positive. A plus forte raison, on souhaite aussi",
+     "source": "rapport_maths_4.tex:§90",
+     "ref_mm": [
+      15,
+      234
+     ],
+     "box_mm": [
+      15,
+      240,
+      180,
+      16
+     ]
+    }
+   ]
+  },
+  {
+   "id": "lot02-p017",
+   "zones": [
+    {
+     "n": 1,
+     "kind": "formule",
+     "latex": "\\[=f(\\frac{2\\pi(k+N)}{N})\\]",
+     "source": "rapport_maths_2.tex:§44",
+     "ref_mm": [
+      15,
+      34
+     ],
+     "box_mm": [
+      15,
+      44,
+      180,
+      26
+     ]
+    },
+    {
+     "n": 2,
+     "kind": "mixte",
+     "latex": "et $k_{2}:E\\times E\\rightarrow\\mathbb{R}$ deux noyaux positifs. Nous allons donc",
+     "source": "rapport_maths_3.tex:§69",
+     "ref_mm": [
+      15,
+      73
+     ],
+     "box_mm": [
+      15,
+      79,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 3,
+     "kind": "texte",
+     "latex": "mauvaise séparation des classes ou un",
+     "source": "rapport_maths_3.tex:§256",
+     "ref_mm": [
+      15,
+      98
+     ],
+     "box_mm": [
+      15,
+      104,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 4,
+     "kind": "mixte",
+     "latex": "Soit $V=(v_{1},v_{2},\\ldots,v_{n})^{\\top}$ un vecteur de $\\mathbb{R}^{n}$",
+     "source": "rapport_maths_3.tex:§42",
+     "ref_mm": [
+      15,
+      123
+     ],
+     "box_mm": [
+      15,
+      129,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 5,
+     "kind": "mixte",
+     "latex": "que nous supposerons de classe $C^{2}$.",
+     "source": "rapport_maths_4.tex:§51",
+     "ref_mm": [
+      15,
+      148
+     ],
+     "box_mm": [
+      15,
+      154,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 6,
+     "kind": "formule",
+     "latex": "\\[\\|A\\|_{F}^{2}=\\text{Trace}(A^{T}A)=\\sum_{i=1}^{rg(A)}\\lambda_{i}\\]",
+     "source": "rapport_maths_1.tex:§169",
+     "ref_mm": [
+      15,
+      173
+     ],
+     "box_mm": [
+      15,
+      183,
+      180,
+      26
+     ]
+    },
+    {
+     "n": 7,
+     "kind": "formule",
+     "latex": "\\[=f(t_{k+N})\\]",
+     "source": "rapport_maths_2.tex:§44",
+     "ref_mm": [
+      15,
+      212
+     ],
+     "box_mm": [
+      15,
+      218,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 8,
+     "kind": "texte",
+     "latex": "temps vérifier certaines propriétés de celles-ci.",
+     "source": "rapport_maths_3.tex:§37",
+     "ref_mm": [
+      15,
+      237
+     ],
+     "box_mm": [
+      15,
+      243,
+      180,
+      16
+     ]
+    }
+   ]
+  },
+  {
+   "id": "lot02-p018",
+   "zones": [
+    {
+     "n": 1,
+     "kind": "mixte",
+     "latex": "des observations $X$ soit simple, ce n'est pas le cas",
+     "source": "rapport_maths_3.tex:§237",
+     "ref_mm": [
+      15,
+      34
+     ],
+     "box_mm": [
+      15,
+      40,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 2,
+     "kind": "mixte",
+     "latex": "classe pour laquelle la fonction $f^{(c)}(x)$ est maximale.",
+     "source": "rapport_maths_3.tex:§184",
+     "ref_mm": [
+      15,
+      59
+     ],
+     "box_mm": [
+      15,
+      65,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 3,
+     "kind": "texte",
+     "latex": "On obtient donc finalement les coefficients de Fourier",
+     "source": "rapport_maths_2.tex:§215",
+     "ref_mm": [
+      15,
+      84
+     ],
+     "box_mm": [
+      15,
+      90,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 4,
+     "kind": "texte",
+     "latex": "comme par exemple:",
+     "source": "rapport_maths_3.tex:§28",
+     "ref_mm": [
+      15,
+      109
+     ],
+     "box_mm": [
+      15,
+      115,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 5,
+     "kind": "formule",
+     "latex": "\\[\\|\\phi(x)\\|^{2}=k(x,x)\\text{ et }\\|\\phi(y)\\|^{2}=k(y,y)\\]",
+     "source": "rapport_maths_3.tex:§53",
+     "ref_mm": [
+      15,
+      134
+     ],
+     "box_mm": [
+      15,
+      140,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 6,
+     "kind": "mixte",
+     "latex": "On sait que $(A^{(c)})$ est centrée donc, si l'on applique",
+     "source": "rapport_maths_1.tex:§131",
+     "ref_mm": [
+      15,
+      159
+     ],
+     "box_mm": [
+      15,
+      165,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 7,
+     "kind": "formule",
+     "latex": "\\[Cov(X)^{T}=Cov(X)\\]",
+     "source": "rapport_maths_1.tex:§53",
+     "ref_mm": [
+      15,
+      184
+     ],
+     "box_mm": [
+      15,
+      190,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 8,
+     "kind": "mixte",
+     "latex": "taille $m$. Alors, le problème des moindres carrées",
+     "source": "rapport_maths_3.tex:§133",
+     "ref_mm": [
+      15,
+      209
+     ],
+     "box_mm": [
+      15,
+      215,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 9,
+     "kind": "formule",
+     "latex": "$L(u,\\partial_{x}u,\\partial_{y}u,g,x,y)=||\\nabla u(x,y)-g(x,y)||_{2}^{2}$",
+     "source": "rapport_maths_4.tex:§227",
+     "ref_mm": [
+      15,
+      234
+     ],
+     "box_mm": [
+      15,
+      240,
+      180,
+      16
+     ]
+    }
+   ]
+  },
+  {
+   "id": "lot02-p019",
+   "zones": [
+    {
+     "n": 1,
+     "kind": "texte",
+     "latex": "propositions précédentes, on se propose de rédiger le",
+     "source": "rapport_maths_1.tex:§163",
+     "ref_mm": [
+      15,
+      34
+     ],
+     "box_mm": [
+      15,
+      40,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 2,
+     "kind": "mixte",
+     "latex": "sur $\\mathbb{R}$ autrement dit, il existe:",
+     "source": "rapport_maths_1.tex:§57",
+     "ref_mm": [
+      15,
+      59
+     ],
+     "box_mm": [
+      15,
+      65,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 3,
+     "kind": "formule",
+     "latex": "\\[Var(Y_{k})=\\lambda_{k}\\]",
+     "source": "rapport_maths_1.tex:§84",
+     "ref_mm": [
+      15,
+      84
+     ],
+     "box_mm": [
+      15,
+      90,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 4,
+     "kind": "formule",
+     "latex": "\\[Var(Xv)=E((Xv)^{2})-E(Xv)\\]",
+     "source": "rapport_maths_1.tex:§30",
+     "ref_mm": [
+      15,
+      109
+     ],
+     "box_mm": [
+      15,
+      115,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 5,
+     "kind": "texte",
+     "latex": "généralisé, il nous faut, dans un premier temps,",
+     "source": "rapport_maths_2.tex:§175",
+     "ref_mm": [
+      15,
+      134
+     ],
+     "box_mm": [
+      15,
+      140,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 6,
+     "kind": "mixte",
+     "latex": "On rappelle que la dérivée directionnelle de $J$ en $x$",
+     "source": "rapport_maths_4.tex:§119",
+     "ref_mm": [
+      15,
+      159
+     ],
+     "box_mm": [
+      15,
+      165,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 7,
+     "kind": "mixte",
+     "latex": "On nome alors $v_{1}$ la première direction principale. Par",
+     "source": "rapport_maths_1.tex:§20",
+     "ref_mm": [
+      15,
+      184
+     ],
+     "box_mm": [
+      15,
+      190,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 8,
+     "kind": "mixte",
+     "latex": "ce que l'on appelle la matrice de Gram associée à $\\alpha$.",
+     "source": "rapport_maths_3.tex:§23",
+     "ref_mm": [
+      15,
+      209
+     ],
+     "box_mm": [
+      15,
+      215,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 9,
+     "kind": "mixte",
+     "latex": "Appelons transformée inverse l'application de $\\mathbb{C}^{n}$ dans",
+     "source": "rapport_maths_2.tex:§123",
+     "ref_mm": [
+      15,
+      234
+     ],
+     "box_mm": [
+      15,
+      240,
+      180,
+      16
+     ]
+    }
+   ]
+  },
+  {
+   "id": "lot02-p020",
+   "zones": [
+    {
+     "n": 1,
+     "kind": "texte",
+     "latex": "et approfondir deux notions fondamentales étudiées",
+     "source": "rapport_maths_4.tex:§6",
+     "ref_mm": [
+      15,
+      34
+     ],
+     "box_mm": [
+      15,
+      40,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 2,
+     "kind": "formule",
+     "latex": "\\[K_{prod}(\\alpha)=K_{1}(\\alpha)\\odot K_{2}(\\alpha)\\]",
+     "source": "rapport_maths_3.tex:§82",
+     "ref_mm": [
+      15,
+      59
+     ],
+     "box_mm": [
+      15,
+      65,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 3,
+     "kind": "formule",
+     "latex": "\\[=\\iint_{\\Omega}\\lim_{\\epsilon\\longrightarrow0}\\epsilon\\times\\frac{1}{\\epsilon}\\times(\\frac{\\partial L}{\\partial u}v+v\\frac{\\partial L}{\\partial x}\\partial_{x}u+v\\frac{\\partial L}{\\partial y}\\partial_{y}u)\\]",
+     "source": "rapport_maths_4.tex:§22",
+     "ref_mm": [
+      15,
+      84
+     ],
+     "box_mm": [
+      15,
+      94,
+      180,
+      26
+     ]
+    },
+    {
+     "n": 4,
+     "kind": "mixte",
+     "latex": "une matrice des labels $B\\in\\mathbb{R}_{m\\times c}$ telle que:",
+     "source": "rapport_maths_3.tex:§310",
+     "ref_mm": [
+      15,
+      123
+     ],
+     "box_mm": [
+      15,
+      129,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 5,
+     "kind": "mixte",
+     "latex": "défini par un vecteur $w\\in\\mathbb{R}^{n}$ et un biais $b\\in\\mathbb{R}$ tel que",
+     "source": "rapport_maths_3.tex:§262",
+     "ref_mm": [
+      15,
+      148
+     ],
+     "box_mm": [
+      15,
+      154,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 6,
+     "kind": "mixte",
+     "latex": "où $\\rho$ est la densité de la corde et $f:\\mathbb{R}\\rightarrow\\mathbb{R}$ une fonction",
+     "source": "rapport_maths_4.tex:§51",
+     "ref_mm": [
+      15,
+      173
+     ],
+     "box_mm": [
+      15,
+      179,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 7,
+     "kind": "mixte",
+     "latex": "On prendra $\\Tilde w=\\frac{1}{\\delta(w,b)}$ et $\\Tilde b=\\frac{1}{\\delta(w,b)}b$ en posant:",
+     "source": "rapport_maths_3.tex:§266",
+     "ref_mm": [
+      15,
+      198
+     ],
+     "box_mm": [
+      15,
+      208,
+      180,
+      26
+     ]
+    }
+   ]
+  },
+  {
+   "id": "lot02-p021",
+   "zones": [
+    {
+     "n": 1,
+     "kind": "formule",
+     "latex": "\\[Y_{k+1}:=X_{v_{k+1}}=\\sum_{i=1}^{n}v_{(k+1)i}X_{i}\\]",
+     "source": "rapport_maths_1.tex:§21",
+     "ref_mm": [
+      15,
+      34
+     ],
+     "box_mm": [
+      15,
+      44,
+      180,
+      26
+     ]
+    },
+    {
+     "n": 2,
+     "kind": "mixte",
+     "latex": "Soit $k\\in\\llbracket1,n\\rrbracket$. Lorsque nous projetons les données $X$ sur",
+     "source": "rapport_maths_1.tex:§69",
+     "ref_mm": [
+      15,
+      73
+     ],
+     "box_mm": [
+      15,
+      79,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 3,
+     "kind": "formule",
+     "latex": "\\[=\\frac{1}{m-1}\\lambda_{k}(m-1)\\]",
+     "source": "rapport_maths_1.tex:§188",
+     "ref_mm": [
+      15,
+      98
+     ],
+     "box_mm": [
+      15,
+      108,
+      180,
+      26
+     ]
+    },
+    {
+     "n": 4,
+     "kind": "formule",
+     "latex": "\\[\\sum_{i=1}^{rg(A)}\\lambda_{i}=n\\]",
+     "source": "rapport_maths_1.tex:§174",
+     "ref_mm": [
+      15,
+      137
+     ],
+     "box_mm": [
+      15,
+      147,
+      180,
+      26
+     ]
+    },
+    {
+     "n": 5,
+     "kind": "formule",
+     "latex": "\\[z=(1-\\theta)x+\\theta y\\quad,\\quad\\theta\\in[0,1]\\]",
+     "source": "rapport_maths_4.tex:§111",
+     "ref_mm": [
+      15,
+      176
+     ],
+     "box_mm": [
+      15,
+      182,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 6,
+     "kind": "texte",
+     "latex": "Ce code nous donne alors la très belle modélisation",
+     "source": "rapport_maths_2.tex:§198",
+     "ref_mm": [
+      15,
+      201
+     ],
+     "box_mm": [
+      15,
+      207,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 7,
+     "kind": "texte",
+     "latex": "Une nouvelle et dernière transformée",
+     "source": "rapport_maths_2.tex:§207",
+     "ref_mm": [
+      15,
+      226
+     ],
+     "box_mm": [
+      15,
+      232,
+      180,
+      16
+     ]
+    }
+   ]
+  },
+  {
+   "id": "lot02-p022",
+   "zones": [
+    {
+     "n": 1,
+     "kind": "mixte",
+     "latex": "en remplaçant la signe $\\geq$ par un signe $>$ et on obtient",
+     "source": "rapport_maths_4.tex:§97",
+     "ref_mm": [
+      15,
+      34
+     ],
+     "box_mm": [
+      15,
+      40,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 2,
+     "kind": "mixte",
+     "latex": "unité de taille $n$. Bien que le centrage dans l'espace",
+     "source": "rapport_maths_3.tex:§237",
+     "ref_mm": [
+      15,
+      59
+     ],
+     "box_mm": [
+      15,
+      65,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 3,
+     "kind": "formule",
+     "latex": "\\[||z-x||=||(1-\\theta)x+\\theta y-x||\\]",
+     "source": "rapport_maths_4.tex:§112",
+     "ref_mm": [
+      15,
+      84
+     ],
+     "box_mm": [
+      15,
+      90,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 4,
+     "kind": "mixte",
+     "latex": "Pour calculer la variance de $Y_{k}$, on utilise la",
+     "source": "rapport_maths_1.tex:§186",
+     "ref_mm": [
+      15,
+      109
+     ],
+     "box_mm": [
+      15,
+      115,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 5,
+     "kind": "formule",
+     "latex": "\\[P\\overline{X}+\\overline{X}Q=R\\]",
+     "source": "rapport_maths_4.tex:§159",
+     "ref_mm": [
+      15,
+      134
+     ],
+     "box_mm": [
+      15,
+      140,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 6,
+     "kind": "formule",
+     "latex": "\\[l_{g}=\\frac{1}{m}u^{T}A\\]",
+     "source": "rapport_maths_1.tex:§129",
+     "ref_mm": [
+      15,
+      159
+     ],
+     "box_mm": [
+      15,
+      169,
+      180,
+      26
+     ]
+    },
+    {
+     "n": 7,
+     "kind": "mixte",
+     "latex": "donc, étant donné que $K_{1}$ et $K_{2}$ sont positives",
+     "source": "rapport_maths_3.tex:§78",
+     "ref_mm": [
+      15,
+      198
+     ],
+     "box_mm": [
+      15,
+      204,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 8,
+     "kind": "formule",
+     "latex": "\\[\\min_{a}\\frac{1}{2}\\|Ka-b\\|_{2}^{2}+\\frac{\\tau}{2}\\|a\\|_{2}^{2}\\]",
+     "source": "rapport_maths_3.tex:§222",
+     "ref_mm": [
+      15,
+      223
+     ],
+     "box_mm": [
+      15,
+      233,
+      180,
+      26
+     ]
+    }
+   ]
+  },
+  {
+   "id": "lot02-p023",
+   "zones": [
+    {
+     "n": 1,
+     "kind": "mixte",
+     "latex": "modifier l'image, on introduit une matrice $M\\in\\mathcal{M}_{m,n}(\\mathbb{R})$,",
+     "source": "rapport_maths_4.tex:§243",
+     "ref_mm": [
+      15,
+      34
+     ],
+     "box_mm": [
+      15,
+      40,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 2,
+     "kind": "mixte",
+     "latex": "Soit $(\\mathcal{P})$ le problème d'optimisation avec contrainte",
+     "source": "rapport_maths_1.tex:§45",
+     "ref_mm": [
+      15,
+      59
+     ],
+     "box_mm": [
+      15,
+      65,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 3,
+     "kind": "mixte",
+     "latex": "forme discrétisée de la fonction $u$ précédente. On",
+     "source": "rapport_maths_4.tex:§239",
+     "ref_mm": [
+      15,
+      84
+     ],
+     "box_mm": [
+      15,
+      90,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 4,
+     "kind": "mixte",
+     "latex": "soient (puisque $J$ est une somme). Donc, on en déduit",
+     "source": "rapport_maths_4.tex:§106",
+     "ref_mm": [
+      15,
+      109
+     ],
+     "box_mm": [
+      15,
+      115,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 5,
+     "kind": "mixte",
+     "latex": "problème avec $P=Q=\\begin{pmatrix}2&1\\\\1&2\\end{pmatrix}$ et $R=0_{\\mathcal{M}_{2,2}(\\mathbb{R})}$",
+     "source": "rapport_maths_4.tex:§160",
+     "ref_mm": [
+      15,
+      134
+     ],
+     "box_mm": [
+      15,
+      148,
+      180,
+      36
+     ]
+    },
+    {
+     "n": 6,
+     "kind": "texte",
+     "latex": "Un signal audio est représenté par une série de",
+     "source": "rapport_maths_2.tex:§82",
+     "ref_mm": [
+      15,
+      187
+     ],
+     "box_mm": [
+      15,
+      193,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 7,
+     "kind": "formule",
+     "latex": "\\[\\Rightarrow\\alpha\\frac{1}{N}\\sum_{k=0}^{N-1}f_{k}\\overline{g_{k}}+\\beta\\frac{1}{N}\\sum_{k=0}^{N-1}h_{k}\\overline{g_{k}}\\]",
+     "source": "rapport_maths_2.tex:§54",
+     "ref_mm": [
+      15,
+      212
+     ],
+     "box_mm": [
+      15,
+      222,
+      180,
+      26
+     ]
+    }
+   ]
+  },
+  {
+   "id": "lot02-p024",
+   "zones": [
+    {
+     "n": 1,
+     "kind": "formule",
+     "latex": "\\[\\Longleftrightarrow(\\epsilon_{d})\\Longleftrightarrow(\\frac{1}{(\\Delta x)^{2}}L_{M})V+V(\\frac{1}{(\\Delta y)^{2}}L_{N})=\\frac{1}{\\epsilon_{0}}R\\]",
+     "source": "rapport_maths_4.tex:§205",
+     "ref_mm": [
+      15,
+      34
+     ],
+     "box_mm": [
+      15,
+      44,
+      180,
+      26
+     ]
+    },
+    {
+     "n": 2,
+     "kind": "mixte",
+     "latex": "propres $v_{i}$, donc:",
+     "source": "rapport_maths_1.tex:§194",
+     "ref_mm": [
+      15,
+      73
+     ],
+     "box_mm": [
+      15,
+      79,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 3,
+     "kind": "texte",
+     "latex": "Étendre les SVM à plusieurs classes est compliqué. On",
+     "source": "rapport_maths_3.tex:§342",
+     "ref_mm": [
+      15,
+      98
+     ],
+     "box_mm": [
+      15,
+      104,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 4,
+     "kind": "texte",
+     "latex": "approprié aux données complexes telles que des",
+     "source": "rapport_maths_3.tex:§237",
+     "ref_mm": [
+      15,
+      123
+     ],
+     "box_mm": [
+      15,
+      129,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 5,
+     "kind": "texte",
+     "latex": "savons en effet pas ce que représentent les directions",
+     "source": "rapport_maths_1.tex:§221",
+     "ref_mm": [
+      15,
+      148
+     ],
+     "box_mm": [
+      15,
+      154,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 6,
+     "kind": "texte",
+     "latex": "Cela permet de sélectionner un sous-espace vectoriel",
+     "source": "rapport_maths_1.tex:§213",
+     "ref_mm": [
+      15,
+      173
+     ],
+     "box_mm": [
+      15,
+      179,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 7,
+     "kind": "formule",
+     "latex": "\\[=\\text{Trace}(A^{T}(K^{T}K+\\lambda I)A)-2\\text{Trace}(A^{T}K^{T}B)\\]",
+     "source": "rapport_maths_3.tex:§329",
+     "ref_mm": [
+      15,
+      198
+     ],
+     "box_mm": [
+      15,
+      204,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 8,
+     "kind": "texte",
+     "latex": "des données n'est pas possible dans un espace de",
+     "source": "rapport_maths_3.tex:§27",
+     "ref_mm": [
+      15,
+      223
+     ],
+     "box_mm": [
+      15,
+      229,
+      180,
+      16
+     ]
+    }
+   ]
+  },
+  {
+   "id": "lot02-p025",
+   "zones": [
+    {
+     "n": 1,
+     "kind": "formule",
+     "latex": "\\[\\Longleftrightarrow J(z)<J(x)\\]",
+     "source": "rapport_maths_4.tex:§114",
+     "ref_mm": [
+      15,
+      34
+     ],
+     "box_mm": [
+      15,
+      40,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 2,
+     "kind": "formule",
+     "latex": "\\[\\langle x,\\phi(w_{i})\\rangle_{H}=\\langle\\sum_{j=1}^{m}\\alpha_{j}\\phi(w_{j}),\\phi(w_{i})\\rangle_{H}\\]",
+     "source": "rapport_maths_3.tex:§144",
+     "ref_mm": [
+      15,
+      59
+     ],
+     "box_mm": [
+      15,
+      69,
+      180,
+      26
+     ]
+    },
+    {
+     "n": 3,
+     "kind": "texte",
+     "latex": "noyaux ne sont qu'en quelque sorte des produits",
+     "source": "rapport_maths_3.tex:§288",
+     "ref_mm": [
+      15,
+      98
+     ],
+     "box_mm": [
+      15,
+      104,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 4,
+     "kind": "texte",
+     "latex": "déterminer quel noyau sera le plus efficace pour un",
+     "source": "rapport_maths_3.tex:§255",
+     "ref_mm": [
+      15,
+      123
+     ],
+     "box_mm": [
+      15,
+      129,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 5,
+     "kind": "formule",
+     "latex": "\\[l_{g}=\\frac{1}{m}u^{T}A.\\]",
+     "source": "rapport_maths_1.tex:§115",
+     "ref_mm": [
+      15,
+      148
+     ],
+     "box_mm": [
+      15,
+      158,
+      180,
+      26
+     ]
+    },
+    {
+     "n": 6,
+     "kind": "mixte",
+     "latex": "et $v_{k}$ est le k-ième vecteur propre de la matrice de",
+     "source": "rapport_maths_1.tex:§71",
+     "ref_mm": [
+      15,
+      187
+     ],
+     "box_mm": [
+      15,
+      193,
+      180,
+      16
+     ]
+    },
+    {
+     "n": 7,
+     "kind": "formule",
+     "latex": "\\[=\\iint_{\\Omega}(\\frac{\\partial L}{\\partial u}v+\\frac{\\partial L}{\\partial_{x}u}\\partial_{x}v+\\frac{\\partial L}{\\partial_{y}u}\\partial_{y}u)dxdy\\]",
+     "source": "rapport_maths_4.tex:§22",
+     "ref_mm": [
+      15,
+      212
+     ],
+     "box_mm": [
+      15,
+      222,
+      180,
+      26
+     ]
+    }
+   ]
+  }
+ ]
+}
