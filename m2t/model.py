@@ -21,11 +21,30 @@ class BasicBlock(nn.Module):
 
     def __init__(self, in_ch, out_ch, stride=(1, 1)):
         super().__init__()
-        raise NotImplementedError("Étape 2")
+        self.stride = stride
+
+        self.basicBlock = nn.Sequential(
+            nn.Conv2d(in_ch, out_ch, 3, stride=self.stride, padding=1, bias=False),
+            nn.BatchNorm2d(out_ch),
+            nn.ReLU(),
+            nn.Conv2d(out_ch, out_ch, 3, padding=1, bias=False),
+            nn.BatchNorm2d(out_ch)
+        )
+
+        if stride != (1, 1) or in_ch != out_ch:
+            self.shortcut = nn.Sequential(
+                nn.Conv2d(in_ch, out_ch, kernel_size=1, stride=stride, bias=False),
+                nn.BatchNorm2d(out_ch)
+            )
+        else:
+            self.shortcut = nn.Identity()
 
     def forward(self, x):
         """(B, in_ch, H, W) -> (B, out_ch, H/sh, W/sw)"""
-        raise NotImplementedError("Étape 2")
+        out = self.basicBlock(x)
+        out += self.shortcut(x)
+        out = torch.nn.functional.relu(out)
+        return out
 
 
 class CNNEncoder(nn.Module):
@@ -33,11 +52,39 @@ class CNNEncoder(nn.Module):
 
     def __init__(self, d_model=256):
         super().__init__()
-        raise NotImplementedError("Étape 2")
+        self.tige = nn.Sequential(
+            nn.Conv2d(1, 32, 3, stride=1, padding=1, bias=False),
+            nn.BatchNorm2d(32),
+            nn.ReLU()
+        )
+        self.etage1 = nn.Sequential(
+            BasicBlock(32, 64, stride=(2, 2)),
+            BasicBlock(64, 64)
+        )
+        self.etage2 = nn.Sequential(
+            BasicBlock(64, 128, stride=(2, 2)),
+            BasicBlock(128, 128)
+        )
+        self.etage3 = nn.Sequential(
+            BasicBlock(128, 256, stride=(2, 2)),
+            BasicBlock(256, 256)
+        )
+        self.etage4 = nn.Sequential(
+            BasicBlock(256, 256, stride=(2, 1)),
+            BasicBlock(256, 256)
+        )
+        self.projection = nn.Conv2d(256, d_model, 1, stride=1, bias=True)
 
     def forward(self, x):
         """(B, 1, H, W) -> (B, d_model, H/16, W/8). H multiple de 16, W multiple de 8."""
-        raise NotImplementedError("Étape 2")
+        out = self.tige(x)
+        out = self.etage1(out)
+        out = self.etage2(out)
+        out = self.etage3(out)
+        out = self.etage4(out)
+        out = self.projection(out)
+        return out
+
 
 
 # --- Étape 3 : encodages positionnels ---------------------------------------
