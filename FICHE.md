@@ -163,13 +163,13 @@ Petites rotations et cisaillement, déformations élastiques, flou, variation de
 - [ ] Varier stylos, scanner et téléphone.
 
 ### Phase 3 : pré-entraînement
-- [ ] Télécharger MathWriting et le rastériser avec le code officiel. Vérifier la licence.
+- [x] Télécharger MathWriting et le rastériser (21/11, `scripts/rasterize_mathwriting.py`, notre propre rendu plutôt que le code officiel : lit le .tgz en flux, cibles = `label` brut passé dans notre normaliseur, 649 196 lignes de 96 px, 0 rejet). Licence CC BY-NC-SA : usage personnel OK. Vocabulaire train + synthetic : 321 tokens ; 7,2 % des images dépassent 1024 px de large.
 - [ ] Télécharger RIMES-2011-line (Hugging Face).
 - [ ] Voir les conditions d'accès à HME100K.
 - [ ] Unifier tous les jeux dans le même format et la même normalisation LaTeX.
 
 ### Phase 4 : modèles
-- [ ] Coder le modèle maison étape par étape : `docs/architecture.md`, squelette `m2t/`, tests `tests/test_model.py` (Nathan code, Claude relit).
+- [ ] Coder le modèle maison étape par étape : `docs/architecture.md`, squelette `m2t/`, tests `tests/test_model.py` (Nathan code, Claude relit). Étapes 1 (vocabulaire) et 2 (encodeur CNN) faites le 22/11.
 - [ ] Benchmarks zero-shot (section 7.3).
 - [ ] Affiner pix2tex sur mes données (avec ou sans pré-entraînement intermédiaire sur MathWriting).
 - [ ] Affiner TrOCR avec un tokenizer étendu aux commandes LaTeX.
