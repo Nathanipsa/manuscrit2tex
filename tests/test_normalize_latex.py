@@ -25,6 +25,13 @@ CASES = [
     (r"${a+b}^2$", r"${a+b}^{2}$"),
     (r"${x}^2$", r"$x^{2}$"),
     (r"$f^{\prime\prime}(x)$", r"$f''(x)$"),
+    (r"$2^\frac{BW}{2}$", r"$2^{\frac{BW}{2}}$"),
+    (r"$N_\text{mem}$", r"$N_{\text{mem}}$"),
+    (r"$x_\mathrm{eff}^\tfrac12$", r"$x_{\mathrm{eff}}^{\frac{1}{2}}$"),
+    (r"$\sqrt\frac{g}{R}$", r"$\sqrt{\frac{g}{R}}$"),
+    (r"$\hat\mathbf{x}$", r"$\hat{\mathbf{x}}$"),
+    (r"$h_\mathbf\mathsf{f}$", r"$h_{\mathbf{\mathsf{f}}}$"),
+    (r"${\rm arcsin}_\kappa$", r"$\arcsin_{\kappa}$"),
     (r"$\sqrt2$", r"$\sqrt{2}$"),
     (r"$\sqrt[3]{x}$", r"$\sqrt[3]{x}$"),
     # délimiteurs et espaces invisibles à la main

@@ -78,7 +78,7 @@ _TEXT_CMDS = {r"\text", r"\textrm", r"\mbox", r"\textnormal", r"\textup",
               r"\hbox", r"\textbf", r"\textit", r"\emph"}
 _OLD_FONTS = {r"\rm": r"\mathrm", r"\bf": r"\mathbf", r"\it": r"\mathit",
               r"\cal": r"\mathcal", r"\sf": r"\mathsf", r"\tt": r"\mathtt"}
-_OPERATORS = set("sin cos tan cot sec csc arcsin arccos arctan sinh cosh tanh "
+_OPERATORS = set("sin cos tan cot sec csc arcsin arccos arctan sinh cosh tanh coth "
                  "exp log ln lg lim sup inf max min det dim ker arg deg gcd "
                  "Pr hom".split())
 
@@ -217,10 +217,29 @@ def _infix(seq):
 
 
 def _take_arg(seq, i, cmd):
+    """Argument de cmd commençant en i, normalisé, comme Group.
+
+    Sans accolades, une commande à arguments emporte ses arguments avec elle :
+    2^\\frac{a}{b} vaut 2^{\\frac{a}{b}}, \\sqrt\\text{bar} vaut \\sqrt{\\text{bar}}."""
     if i >= len(seq):
         raise LatexError(f"argument manquant après {cmd}")
     a = seq[i]
-    return i + 1, Group(_norm_math(list(a) if isinstance(a, Group) else [a]))
+    if isinstance(a, Group):
+        return i + 1, Group(_norm_math(list(a)))
+    j = _arg_end(seq, i)
+    return j, Group(_norm_math(list(seq[i:j])))
+
+
+def _arg_end(seq, i):
+    """Indice qui suit l'argument sans accolades commençant en i (récursif : \\mathbf\\mathsf{f})."""
+    a = seq[i] if i < len(seq) else None
+    if not isinstance(a, str):
+        return i + 1
+    a = _SYNONYMS.get(a, a)
+    j = i + 1
+    for _ in range(_ARITY.get(a, 1 if a in (r"\text", r"\sqrt") else 0)):
+        j = _arg_end(seq, j)
+    return j
 
 
 def _norm_math(seq):
@@ -231,8 +250,9 @@ def _norm_math(seq):
         t = seq[i]
         i += 1
         if isinstance(t, Group):
-            if t and isinstance(t[0], str) and t[0] in _OLD_FONTS:  # {\rm d} → \mathrm{d}
-                out += [_OLD_FONTS[t[0]], Group(_norm_math(list(t[1:])))]
+            if t and isinstance(t[0], str) and t[0] in _OLD_FONTS:
+                # {\rm d} → \mathrm{d}, relu comme tel : {\rm sin} doit finir en \sin
+                seq[i:i] = [_OLD_FONTS[t[0]], Group(t[1:])]
             else:
                 out.append(_Free(_norm_math(list(t))))
             continue
