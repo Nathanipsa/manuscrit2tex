@@ -153,7 +153,7 @@ Petites rotations et cisaillement, déformations élastiques, flou, variation de
 
 ### Phase 1 : outillage des données
 - [x] **Script `make_templates.py`** (20/11, lot01 généré : 25 pages, 218 cadres) : prend des `.tex`, extrait et découpe les lignes, puis génère des PDF de feuilles gabarits (ArUco aux coins, ID de page / QR code, zones de ligne numérotées, LaTeX de référence) et un fichier `manifest.json` (ID de page → liste des lignes LaTeX).
-- [ ] **Script `crop_scans.py`** : détection des ArUco (OpenCV), correction de perspective, découpe des zones, lecture de l'ID de page, écriture des paires `(png, tex)`.
+- [x] **Script `crop_scans.py`** (20/11, validé sur photos simulées : erreur ≤ 0,2 mm ; reste à essayer sur un vrai scan téléphone) : détection des ArUco (OpenCV), correction de perspective, découpe des zones, lecture de l'ID de page, écriture des paires `(png, tex)`.
 - [x] **Module `normalize_latex.py`** (20/11, `scripts/`, 7 tests dont un de compilation pdflatex ; option `display=True` pour la sortie) : forme canonique + tokenizer LaTeX, avec des tests unitaires sur des cas pièges (`\frac` / `\over`, espaces, `\left`/`\right`, `\text{}` français avec accents).
 - [ ] Script d'évaluation `evaluate.py` : CER, TER, ExpRate et taux de compilation.
 
@@ -169,6 +169,7 @@ Petites rotations et cisaillement, déformations élastiques, flou, variation de
 - [ ] Unifier tous les jeux dans le même format et la même normalisation LaTeX.
 
 ### Phase 4 : modèles
+- [ ] Coder le modèle maison étape par étape : `docs/architecture.md`, squelette `m2t/`, tests `tests/test_model.py` (Nathan code, Claude relit).
 - [ ] Benchmarks zero-shot (section 7.3).
 - [ ] Affiner pix2tex sur mes données (avec ou sans pré-entraînement intermédiaire sur MathWriting).
 - [ ] Affiner TrOCR avec un tokenizer étendu aux commandes LaTeX.

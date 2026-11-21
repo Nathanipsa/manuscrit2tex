@@ -523,9 +523,31 @@ def used_latex():
     return seen
 
 
+def build_pdf(pages, out_dir):
+    """PDF des gabarits dans out_dir/gabarits.pdf (images et .tex dans out_dir/build)."""
+    build = Path(out_dir) / "build"
+    build.mkdir(parents=True, exist_ok=True)
+    write_images(pages, build)
+    tex = PREAMBLE + "".join(page_tex(p, len(pages), k + 1) for k, p in enumerate(pages)) + "\\end{document}\n"
+    ok, log = _compile(tex, build, runs=2)  # 2 passes : TikZ « remember picture »
+    if not ok:
+        raise RuntimeError("Échec de compilation des gabarits :\n" + log[-3000:])
+    shutil.copy(build / "doc.pdf", Path(out_dir) / "gabarits.pdf")
+
+
+def make_manifest(batch, pages, **extra):
+    return {"batch": batch, "created": date.today().isoformat(), **extra,
+            "page_mm": [PAGE_W, PAGE_H],
+            "aruco": {"dict": "DICT_4X4_50", "size_mm": MARKER,
+                      "top_left_mm": {str(k): list(v) for k, v in MARKERS.items()}},
+            "qr_mm": list(QR), "pages": pages}
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
-    ap.add_argument("sources", nargs="+", type=Path)
+    ap.add_argument("sources", nargs="*", type=Path)
+    ap.add_argument("--rebuild-pdf", action="store_true",
+                    help="refaire gabarits.pdf d'un lot existant à partir de son manifest")
     ap.add_argument("--defs", nargs="*", type=Path, default=[],
                     help="fichiers où lire glossaire, acronymes et \\newcommand (main.tex, glossaire.tex)")
     ap.add_argument("--mix", default="texte=1,mixte=1,formule=1",
@@ -537,6 +559,13 @@ def main():
     args = ap.parse_args()
 
     out_dir = ROOT / "templates" / args.batch
+    if args.rebuild_pdf:
+        pages = json.loads((out_dir / "manifest.json").read_text(encoding="utf-8"))["pages"]
+        build_pdf(pages, out_dir)
+        print(f"{out_dir}/gabarits.pdf refait ({len(pages)} pages)")
+        return
+    if not args.sources:
+        ap.error("il faut au moins une source .tex")
     if (out_dir / "manifest.json").exists() and not args.list:
         sys.exit(f"{out_dir}/manifest.json existe déjà : un lot imprimé ne se régénère pas.")
 
@@ -570,22 +599,8 @@ def main():
     if len(pages) < args.pages:
         print(f"Attention : seulement {len(pages)} pages, pas assez de lignes pour {args.pages}.")
 
-    build = out_dir / "build"
-    build.mkdir(parents=True, exist_ok=True)
-    write_images(pages, build)
-    tex = PREAMBLE + "".join(page_tex(p, len(pages), k + 1) for k, p in enumerate(pages)) + "\\end{document}\n"
-    ok, log = _compile(tex, build, runs=2)  # 2 passes : TikZ « remember picture »
-    if not ok:
-        sys.exit("Échec de compilation des gabarits :\n" + log[-3000:])
-    shutil.copy(build / "doc.pdf", out_dir / "gabarits.pdf")
-
-    manifest = {
-        "batch": args.batch, "created": date.today().isoformat(), "seed": args.seed,
-        "sources": [str(s) for s in args.sources], "page_mm": [PAGE_W, PAGE_H],
-        "aruco": {"dict": "DICT_4X4_50", "size_mm": MARKER,
-                  "top_left_mm": {str(k): v for k, v in MARKERS.items()}},
-        "qr_mm": list(QR), "pages": pages,
-    }
+    build_pdf(pages, out_dir)
+    manifest = make_manifest(args.batch, pages, seed=args.seed, sources=[str(s) for s in args.sources])
     (out_dir / "manifest.json").write_text(json.dumps(manifest, ensure_ascii=False, indent=1), encoding="utf-8")
     n = sum(len(p["zones"]) for p in pages)
     per_kind = {k: sum(z["kind"] == k for p in pages for z in p["zones"]) for k in counts}
