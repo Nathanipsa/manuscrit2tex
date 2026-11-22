@@ -196,6 +196,13 @@ def clean_tex(text, glossary, macros):
     m = re.search(r"\\begin\{document\}(.*)\\end\{document\}", text, re.S)
     if m:
         text = m.group(1)
+    # Réglages de mise en page écrits après \begin{document} : rien à recopier à la main.
+    text = re.sub(r"\\makeatletter.*?\\makeatother", "", text, flags=re.S)
+    text = _sub_cmd(text, ["newcommand", "renewcommand", "setlength"], 2, lambda _, a: "")
+    text = _sub_cmd(text, ["patchcmd"], 3, lambda _, a: "")
+    text = _sub_cmd(text, ["tcbset", "WithArrowsOptions", "ChTitleVar", "ChNameVar",
+                           "pagestyle", "thispagestyle"], 1, lambda _, a: "")
+    text = re.sub(r"\\(tableofcontents|listoffigures|listoftables|listofpropositions)\b", "", text)
     # Les vraies fins de paragraphe sont figées en \x00 dès maintenant : retirer
     # un \label seul sur sa ligne ne doit pas couper l'équation en deux.
     text = re.sub(r"\n[ \t]*\n\s*", "\x00", text).replace("\n", " ")
@@ -367,6 +374,8 @@ def split_lines(paragraph, origin):
             space = False
         else:
             content = re.sub(r"\\\\(\[[^\]]*\])?", " ", content)  # retour à la ligne forcé
+            # Alignement de mise en page hors des maths : invisible sur une ligne manuscrite.
+            content = re.sub(r"\\(q?quad|textbullet)\b", " ", content)
             for m in re.finditer(r"\S+", content):
                 add(m.group(0), len(m.group(0)), space or m.start() > 0)
                 space = False
