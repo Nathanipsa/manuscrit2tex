@@ -158,7 +158,7 @@ Petites rotations et cisaillement, déformations élastiques, flou, variation de
 - [ ] Script d'évaluation `evaluate.py` : CER, TER, ExpRate et taux de compilation.
 
 ### Phase 2 : collecte
-- [ ] Imprimer et remplir un premier lot (~25 pages). **Prêts (20/11)** : `lot01` (rapport de stage : 110 texte, 97 mixtes, 11 formules) et `lot02` (4 rapports de maths dans `data/sources/` : 65 texte, 63 mixtes, 69 formules). Il reste ~320 formules inutilisées dans ces sources pour les lots suivants.
+- [ ] Imprimer et remplir un premier lot (~25 pages). **Prêts (20/11)** : `lot01` (rapport de stage : 110 texte, 97 mixtes, 11 formules) et `lot02` (4 rapports de maths dans `data/sources/` : 65 texte, 63 mixtes, 69 formules). Il reste ~320 formules inutilisées dans ces sources pour les lots suivants. Ajouté le 22/11 : `cours_ecg2.tex` (cours de maths ECG2 : 590 texte, 491 mixtes, 139 formules candidates).
 - [ ] Mettre de côté ~5 pages comme **jeu de test figé**, qu'on ne touche plus jamais.
 - [ ] Varier stylos, scanner et téléphone.
 
