@@ -89,28 +89,51 @@ class CNNEncoder(nn.Module):
 
 # --- Étape 3 : encodages positionnels ---------------------------------------
 
+def sincos(positions, dim):
+    table = torch.zeros(len(positions), dim)       # tenseur de zéros, forme (lignes, colonnes)
+    for ligne, t in enumerate(positions):          # ligne = indice dans la table, t = valeur de la position
+        for c in range(dim):
+            i = c // 2
+            if c % 2 == 0:
+                table[ligne, c] = torch.sin(t / 10_000 ** (2*i/dim))
+            else:
+                table[ligne, c] = torch.cos(t / 10_000 ** (2*i/dim))
+    return table
+
 class PositionalEncoding2D(nn.Module):
     """Sinusoïdes : la 1re moitié des canaux code la ligne, la 2de moitié la colonne. Aucun paramètre."""
 
-    def __init__(self, d_model):
+    def __init__(self, d_model, max_width=256, max_height=12):
         super().__init__()
-        raise NotImplementedError("Étape 3")
+        table_lign = sincos(torch.arange(max_height), d_model // 2)
+        table_column = sincos(torch.arange(max_width), d_model // 2)
+        self.register_buffer("pe_lign", table_lign, persistent=False)
+        self.register_buffer("pe_column", table_column, persistent=False)
 
     def forward(self, feat):
         """(B, d, h, w) -> (B, d, h, w), feat + PE"""
-        raise NotImplementedError("Étape 3")
-
+        _, _, h, w = feat.shape
+        lign = torch.permute(self.pe_lign[:h, :], (1, 0))
+        lign = torch.unsqueeze(lign, dim=2)
+        lign = lign.expand(-1, -1, w)
+        column = torch.permute(self.pe_column[:w], (1, 0))
+        column = torch.unsqueeze(column, dim=1)
+        column = column.expand(-1, h, -1)
+        concat = torch.cat([lign, column], dim=0)
+        return feat + concat
 
 class PositionalEncoding1D(nn.Module):
     """Sinusoïdes classiques (Vaswani et al. 2017), précalculées jusqu'à max_len. Aucun paramètre."""
 
     def __init__(self, d_model, max_len=512):
         super().__init__()
-        raise NotImplementedError("Étape 3")
+        table = sincos(torch.arange(max_len), d_model)
+        self.register_buffer("pe", table, persistent=False)
 
     def forward(self, x):
         """(B, T, d) -> (B, T, d), x + PE[:T]"""
-        raise NotImplementedError("Étape 3")
+        _, T, _ = x.shape
+        return x + self.pe[:T]
 
 
 # --- Étape 4 : attention multi-têtes, à la main -----------------------------
