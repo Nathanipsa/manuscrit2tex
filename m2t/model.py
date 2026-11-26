@@ -148,14 +148,54 @@ class MultiHeadAttention(nn.Module):
 
     def __init__(self, d_model, n_heads, dropout=0.0):
         super().__init__()
-        raise NotImplementedError("Étape 4")
+        self.h = n_heads
+        self.d_k = d_model // n_heads
+        assert d_model % n_heads == 0
+        self.q_proj = nn.Linear(d_model, d_model, bias=True)
+        self.k_proj = nn.Linear(d_model, d_model, bias=True)
+        self.v_proj = nn.Linear(d_model, d_model, bias=True)
+        self.out_proj = nn.Linear(d_model, d_model, bias=True)
+        self.dropout = nn.Dropout(dropout)
 
     def forward(self, query, key, value, key_padding_mask=None, causal=False):
         """query (B, Tq, d), key et value (B, Tk, d)
         key_padding_mask : (B, Tk) booléen, True = clé ignorée ; ou None
         causal : si True, la position i ne voit que les clés j <= i (exige Tq == Tk)
         -> (B, Tq, d)"""
-        raise NotImplementedError("Étape 4")
+        q = self.q_proj(query)
+        k = self.k_proj(key)
+        v = self.v_proj(value)
+
+        B, Tq, _ = q.shape
+        q = q.reshape(B, Tq, self.h, self.d_k)
+        q = q.transpose(1, 2)
+
+        _, Tk, _ = k.shape
+        k = k.reshape(B, Tk, self.h, self.d_k)
+        k = k.transpose(1, 2)
+
+        v = v.reshape(B, Tk, self.h, self.d_k)
+        v = v.transpose(1, 2)
+
+        scores = q @ k.transpose(-2, -1) / (self.d_k ** 0.5)
+
+        if key_padding_mask is not None:
+            key_padding_mask = torch.unsqueeze(key_padding_mask, 1)
+            key_padding_mask = torch.unsqueeze(key_padding_mask, 1)
+            scores = scores.masked_fill(key_padding_mask, -float("inf"))
+
+        if causal:
+            key_padding_mask = torch.triu(torch.ones(Tq, Tk, dtype=torch.bool, device=scores.device), diagonal=1)
+            scores = scores.masked_fill(key_padding_mask, -float("inf"))
+
+
+        scores = scores.softmax(dim=-1)
+        poids = self.dropout(scores)
+        poids = poids @ v
+        attention = poids.transpose(1, 2)
+        attention = attention.reshape(B, Tq, self.d_k * self.h)
+        out = self.out_proj(attention)
+        return out
 
 
 # --- Étape 5 : couches Transformer (pre-LN) ---------------------------------
