@@ -205,22 +205,35 @@ class FeedForward(nn.Module):
 
     def __init__(self, d_model, d_ff, dropout=0.0):
         super().__init__()
-        raise NotImplementedError("Étape 5")
+        self.feedforward = nn.Sequential(
+            nn.Linear(d_model, d_ff),
+            nn.GELU(),
+            nn.Dropout(dropout),
+            nn.Linear(d_ff, d_model),
+        )
 
     def forward(self, x):
-        raise NotImplementedError("Étape 5")
-
+        x = x + self.feedforward(x)
+        return x
 
 class EncoderLayer(nn.Module):
     """x = x + Drop(SelfAttn(LN(x))) ; x = x + Drop(FF(LN(x)))"""
 
     def __init__(self, d_model, n_heads, d_ff, dropout=0.0):
         super().__init__()
-        raise NotImplementedError("Étape 5")
+        self.ln1 = nn.LayerNorm(d_model)
+        self.ln2 = nn.LayerNorm(d_model)
+        self.self_attn = MultiHeadAttention(d_model, n_heads, dropout=dropout)
+        self.dropout = nn.Dropout(dropout)
+        self.feed_forward = FeedForward(d_model, d_ff, dropout=dropout)
 
     def forward(self, x, pad_mask=None):
         """(B, S, d), pad_mask (B, S) -> (B, S, d)"""
-        raise NotImplementedError("Étape 5")
+        h1 = self.ln1(x)
+        x = x + self.dropout(self.self_attn(h1, h1, h1, key_padding_mask=pad_mask))
+        h2 = self.ln2(x)
+        x = x + self.dropout(self.feed_forward(h2))
+        return x
 
 
 class DecoderLayer(nn.Module):
@@ -230,11 +243,23 @@ class DecoderLayer(nn.Module):
 
     def __init__(self, d_model, n_heads, d_ff, dropout=0.0):
         super().__init__()
-        raise NotImplementedError("Étape 5")
+        self.ln1 = nn.LayerNorm(d_model)
+        self.ln2 = nn.LayerNorm(d_model)
+        self.ln3 = nn.LayerNorm(d_model)
+        self.self_attn_causal = MultiHeadAttention(d_model, n_heads, dropout=dropout)
+        self.self_attn_cross = MultiHeadAttention(d_model, n_heads, dropout=dropout)
+        self.feed_forward = FeedForward(d_model, d_ff, dropout=dropout)
+        self.dropout = nn.Dropout(dropout)
 
     def forward(self, x, memory, memory_pad_mask=None):
         """x (B, T, d), memory (B, S, d), memory_pad_mask (B, S) -> (B, T, d)"""
-        raise NotImplementedError("Étape 5")
+        h1 = self.ln1(x)
+        x = x + self.dropout(self.self_attn_causal(h1, h1, h1, causal=True))
+        h2 = self.ln2(x)
+        x = x + self.dropout(self.self_attn_cross(h2, memory, memory, key_padding_mask=memory_pad_mask))
+        h3 = self.ln3(x)
+        x = x + self.dropout(self.feed_forward(h3))
+        return x
 
 
 # --- Étapes 6 et 7 : le modèle complet --------------------------------------
