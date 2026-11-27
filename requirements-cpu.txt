@@ -1,0 +1,5 @@
+# Portable : coder et faire passer les tests, sans GPU. Entraînements et benchmarks sur le fixe.
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.12.*
+numpy
+opencv-python-headless>=4.8
